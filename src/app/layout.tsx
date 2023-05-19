@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${nunito.variable} ${familjenGrotesk.variable} bg-pink-50 text-pink-800 font-sans`}>{children}</body>
+      <body className={`${nunito.variable} ${familjenGrotesk.variable} bg-zinc-50 text-pink-800 font-sans`}>{children}</body>
     </html>
   )
 }

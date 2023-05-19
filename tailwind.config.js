@@ -13,7 +13,8 @@ module.exports = {
       },
       colors: {
         pink: {
-          100: '#f6e5e8',
+          100: '#f3e2e6',
+          200: '#F3E2E6',
           300: "#F0AAB4",
           400: "#FF738C",
           500: "#FE2B8F",
@@ -21,7 +22,10 @@ module.exports = {
           700: "#78003C",
           800: "#3C2D37"
         }
-      }
+      },
+      blur: {
+        full: '200px',
+      },
     },
   },
   plugins: [],
