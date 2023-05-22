@@ -9,7 +9,6 @@ module.exports = {
     extend: {
       fontFamily: {
         title: 'var(--font-familjen-grotesk)',
-        sans: 'var(--font-nunito-sans)'
       },
       colors: {
         pink: {

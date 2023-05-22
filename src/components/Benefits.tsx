@@ -1,5 +1,10 @@
-import { Car, GraduationCap, Heart, Sandwich, ShoppingCart, Stethoscope, Utensils } from "lucide-react"
+import { Car, Sandwich, ShoppingCart, Stethoscope, Utensils } from "lucide-react"
 import { CategorieCard } from "./CategorieCard"
+
+import market from '../assets/market.jpg'
+import restaurant from '../assets/restaurant.jpg'
+import food from '../assets/food.jpg'
+import mobility from '../assets/mobility.webp'
 
 const cards = [
     {
@@ -9,6 +14,7 @@ const cards = [
         link: '#',
         tag:'Saldo pat',
         icon: ShoppingCart,
+        coverUrl: market
     },
     {
         id: 2,
@@ -17,6 +23,7 @@ const cards = [
         link: '#',
         tag:'Saldo pat',
         icon: Utensils,
+        coverUrl: food
     },
     {
         id: 3,
@@ -25,6 +32,7 @@ const cards = [
         link: '#',
         tag:'Saldo pat',
         icon: Sandwich,
+        coverUrl: restaurant
     },
     {
         id: 4,
@@ -32,6 +40,7 @@ const cards = [
         description: 'Aceito em postos de combustível, estacionamentos, aluguel de bikes e patinetes, além de aplicativos de corrida como Uber e 99.',
         link: '#',
         icon: Car,
+        coverUrl: mobility
     },
     // {
     //     id: 5,
@@ -69,7 +78,8 @@ export function Benefits() {
                     {cards.map((card) => {
                         return (
                             <CategorieCard
-                                key={card.id} 
+                                key={card.id}
+                                coverUrl={card.coverUrl} 
                                 category={card.category}
                                 description={card.description}
                                 icon={<card.icon size={24} className="text-pink-500" />}

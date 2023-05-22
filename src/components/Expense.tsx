@@ -15,7 +15,7 @@ export function Expense() {
                         Cuidar das despesas e reembolsos dos colaboradores ficou mais fácil com a Flash Expense. Tenha uma visão completa e personalizada de todas as despesas: adiantamentos, relatórios, prestação de contas e muito mais. Tudo pelo app e plataforma. É o fim da papelada!
                     </p>
 
-                    <button className="mt-6 px-8 py-4 rounded-lg bg-pink-400 text-white font-extrabold transition-colors duration-200
+                    <button className="mt-6 px-8 py-4 rounded-lg bg-pink-400 text-white font-bold transition-colors duration-200
                         border-2 border-pink-400 hover:bg-transparent hover:text-zinc-600">
                             Ler mais
                     </button>

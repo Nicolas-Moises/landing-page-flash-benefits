@@ -10,13 +10,41 @@ import Image from 'next/image'
 
 import { useKeenSlider } from 'keen-slider/react';
 
-const animation = { duration: 15000, easing: (t: any) => t }
+const animation = { duration: 20000, easing: (t: any) => t }
+
+const companies = [
+  {
+    id: 1,
+    logoUrl: companyOne,
+  },
+  {
+    id: 2,
+    logoUrl: companyTwo,
+  },
+  {
+    id: 3,
+    logoUrl: companyThree,
+  },
+  {
+    id: 4,
+    logoUrl: companyFour,
+  },
+  {
+    id: 5,
+    logoUrl: companyFive,
+  },
+  {
+    id: 6,
+    logoUrl: companySix,
+  },
+]
 
 export function Companies() {
     const [sliderRef] = useKeenSlider({
         loop: true,
         slides: {
-          perView: 8,
+          perView: 7,
+          spacing: 170
         },
         mode: "snap",
         renderMode: "performance",
@@ -39,17 +67,16 @@ export function Companies() {
                 </h4>
             <div className='absolute top-0 bottom-0 left-0 z-50 w-40 bg-gradient-to-r from-pink-100' />
             <div className='absolute top-0 bottom-0 right-0 z-50 w-60 bg-gradient-to-l from-pink-100' />
-           <div className=" items-center mt-20 keen-slider" ref={sliderRef}>
-                <Image src={companyTwo} alt="" className='keen-slider__slide grayscale  opacity-75 h-10 object-contain' />
-                <Image src={companyThree} alt="" className='keen-slider__slide grayscale  opacity-75 h-10 object-contain' />
-                <Image src={companyFour} alt="" className='keen-slider__slide grayscale  opacity-75 h-10 object-contain' />
-                <Image src={companyFive} alt="" className='keen-slider__slide grayscale  opacity-75 h-10 object-contain' />
-                <Image src={companySix} alt="" className='keen-slider__slide grayscale  opacity-75 h-10 object-contain' />
-                <Image src={companyTwo} alt="" className='keen-slider__slide grayscale  opacity-75 h-10 object-contain' />
-                <Image src={companyThree} alt="" className='keen-slider__slide grayscale  opacity-75 h-14 object-contain' />
-                <Image src={companyFour} alt="" className='keen-slider__slide grayscale  opacity-75 h-10 object-contain' />
-                <Image src={companyFive} alt="" className='keen-slider__slide grayscale  opacity-75 h-10 object-contain' />
-                <Image src={companySix} alt="" className='keen-slider__slide grayscale  opacity-75 h-10 object-contain' />
+           <div className=" items-center mt-20 keen-slider mx-auto" ref={sliderRef}>
+            {companies.map(company => {
+              return (
+                <Image 
+                  src={company.logoUrl} 
+                  alt='' 
+                  key={company.id} 
+                  className=' w-[100%] 2xl:w-15% object-contain opacity-70  aspect-[3/2] keen-slider__slide hover:opacity-90 transition-opacity' />
+              )
+            })}
            </div>
         </section>
     )

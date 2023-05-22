@@ -6,6 +6,7 @@ import { Expense } from "@/components/Expense";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { People } from "@/components/People";
+import { Testimonials } from "@/components/Testimonials";
 
 import 'keen-slider/keen-slider.min.css';
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Expense />
       <People />
       <Benefits />
+      <Testimonials />
     </main>
   )
 }
