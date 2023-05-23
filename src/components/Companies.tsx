@@ -8,10 +8,6 @@ import companyFive from '../assets/company-5.png'
 import companySix from '../assets/company-6.png'
 import Image from 'next/image'
 
-import { useKeenSlider } from 'keen-slider/react'
-
-const animation = { duration: 20000, easing: (t: any) => t }
-
 const companies = [
   {
     id: 1,
@@ -40,25 +36,6 @@ const companies = [
 ]
 
 export function Companies() {
-  const [sliderRef] = useKeenSlider({
-    loop: true,
-    slides: {
-      perView: 6,
-      spacing: 170,
-    },
-    mode: 'snap',
-    renderMode: 'performance',
-    drag: false,
-    created(s) {
-      s.moveToIdx(5, true, animation)
-    },
-    updated(s) {
-      s.moveToIdx(s.track.details.abs + 5, true, animation)
-    },
-    animationEnded(s) {
-      s.moveToIdx(s.track.details.abs + 5, true, animation)
-    },
-  })
   return (
     <section className="w-full bg-pink-100 py-20 relative">
       <h4 className="font-extrabold font-title text-3xl text-center tracking-tight">
@@ -68,17 +45,16 @@ export function Companies() {
         </span>{' '}
         da burocracia
       </h4>
-      <div className="absolute top-0 bottom-0 left-0 z-40 w-40 bg-gradient-to-r from-pink-100" />
-      <div className="absolute top-0 bottom-0 right-0 z-40 w-60 bg-gradient-to-l from-pink-100" />
-      <div className=" items-center mt-20 keen-slider mx-auto" ref={sliderRef}>
+      <div className="items-center mt-20 mx-auto grid grid-cols-6 w-full max-w-7xl">
         {companies.map((company) => {
           return (
-            <Image
-              src={company.logoUrl}
-              alt=""
-              key={company.id}
-              className="object-contain opacity-70  aspect-[3/2] keen-slider__slide hover:opacity-90 transition-opacity"
-            />
+            <div className="flex items-center justify-center" key={company.id}>
+              <Image
+                src={company.logoUrl}
+                alt=""
+                className="object-contain opacity-70 w-1/2 max-h-12 hover:opacity-90 transition-opacity"
+              />
+            </div>
           )
         })}
       </div>

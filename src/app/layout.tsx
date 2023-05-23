@@ -1,6 +1,8 @@
 import { ReactNode } from 'react'
 import './globals.css'
 import { Nunito_Sans, Familjen_Grotesk } from 'next/font/google'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 const nunito = Nunito_Sans({ subsets: ['latin'] })
 const familjenGrotesk = Familjen_Grotesk({
@@ -20,7 +22,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={`${nunito.className} ${familjenGrotesk.variable} bg-zinc-50 text-pink-800 font-sans`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

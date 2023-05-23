@@ -5,7 +5,7 @@ export function Navigation() {
   return (
     <nav>
       <ul className="gap-10 flex items-center">
-        <li className="text-sm font-semibold text-zinc-500 hover:text-pink-400">
+        <li className="text-sm font-semibold text-zinc-500">
           <SubMenuProducts>
             <span className="flex gap-3 items-center relative cursor-pointer group">
               Produtos
@@ -15,9 +15,6 @@ export function Navigation() {
               />
             </span>
           </SubMenuProducts>
-        </li>
-        <li className="text-sm font-semibold text-zinc-500 hover:text-pink-400">
-          <a href="#">Rh</a>
         </li>
         <li className="text-sm font-semibold text-zinc-500 hover:text-pink-400">
           <a href="#">Colaboradores</a>

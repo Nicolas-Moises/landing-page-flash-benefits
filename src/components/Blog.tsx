@@ -4,6 +4,7 @@ import post1 from '../assets/post-1.png'
 import post2 from '../assets/post-2.png'
 import post3 from '../assets/post-3.png'
 import { BlogCard } from './BlogCard'
+import { ArrowRight } from 'lucide-react'
 
 const posts = [
   {
@@ -47,8 +48,15 @@ export function Blog() {
             </span>
           </h4>
         </div>
-        <Link href="#" className="text-sm text-pink-400 font-medium">
+        <Link
+          href="#"
+          className="font-bold text-sm text-pink-400 flex items-center gap-2 group hover:text-pink-500 transition-colors"
+        >
           Ver tudo
+          <ArrowRight
+            size={16}
+            className="group-hover:translate-x-1 transition-all duration-150"
+          />
         </Link>
       </div>
       <div className="grid grid-cols-3 gap-8 mt-20">

@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { ReactElement } from 'react'
 
 interface CategorieCardProps {
@@ -38,7 +39,7 @@ export function CategorieCard(props: CategorieCardProps) {
           <p className="leading-relaxed text-zinc-500">{props.description}</p>
         </div>
 
-        <a
+        <Link
           href={props.link}
           className="font-bold text-sm text-pink-400 flex items-center gap-2 group hover:text-pink-500 transition-colors "
         >
@@ -47,7 +48,7 @@ export function CategorieCard(props: CategorieCardProps) {
             size={16}
             className="group-hover:translate-x-1 transition-all duration-150"
           />
-        </a>
+        </Link>
       </div>
     </div>
   )

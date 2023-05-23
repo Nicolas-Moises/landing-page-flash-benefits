@@ -11,9 +11,9 @@ interface TestimonialCardProps {
 
 export function TestimonialCard(props: TestimonialCardProps) {
   return (
-    <div className="max-w-2xl w-full px-8 pt-14 pb-8 rounded-tl-[60px] rounded-br-[60px] bg-white drop-shadow-2xl">
+    <div className="max-w-4xl w-full px-8 pt-14 pb-8 rounded-tl-[60px] rounded-br-[60px] bg-white drop-shadow-2xl">
       <Quote size={32} className="fill-pink-400 text-pink-400" />
-      <p className="text-xl font-medium text-zinc-600 text-center flex items-start mt-4">
+      <p className="text-2xl font-medium text-zinc-600 text-center flex items-start mt-4">
         {props.message}
       </p>
       <div className="flex flex-col items-center mt-6">
