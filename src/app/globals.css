@@ -5,3 +5,24 @@
 body {
     @apply font-sans;
 }
+
+.sub-menu {
+    z-index: 9999;
+    animation: menu-animate 0.5s ease;
+}
+
+@keyframes menu-animate {
+    from {
+        right: -100vw;
+    }
+  
+    to {
+        right: 0;
+    }
+  }
+
+@media (max-width: 768px) {
+    html {
+        font-size: 85%;
+    }
+}
