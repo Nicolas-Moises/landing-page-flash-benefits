@@ -34,7 +34,7 @@ export function Hero() {
           height={582}
           alt=""
           priority={true}
-          className="max-w-lg w-full rounded-tl-[80px] mr-2"
+          className="max-w-lg w-full mr-2"
         />
       </div>
     </section>

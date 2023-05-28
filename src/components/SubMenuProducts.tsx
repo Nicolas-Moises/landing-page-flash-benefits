@@ -18,7 +18,7 @@ interface SubMenuProductsProps {
 
 export function SubMenuProducts(props: SubMenuProductsProps) {
   return (
-    <NavigationMenu.Root delayDuration={100} skipDelayDuration={2000}>
+    <NavigationMenu.Root delayDuration={100}>
       <NavigationMenu.List>
         <NavigationMenu.Item>
           <NavigationMenu.Trigger asChild>

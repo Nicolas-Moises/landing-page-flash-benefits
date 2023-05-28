@@ -10,6 +10,15 @@ module.exports = {
       fontFamily: {
         title: 'var(--font-familjen-grotesk)',
       },
+      keyframes: {
+        enterFromUp: {
+          from: { opacity: 0, transform: 'translatey(200px)' },
+          to: { opacity: 1, transform: 'translatey(0)' },
+        },
+      },
+      animation: {
+        enterFromUp: 'enterFromUp 250ms ease',
+      },
       colors: {
         pink: {
           100: '#f3e2e6',

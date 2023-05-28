@@ -4,7 +4,7 @@ export function Pricing() {
   return (
     <section className="w-full py-20 max-w-7xl mx-auto flex flex-col items-center">
       <div className="flex flex-col items-center ">
-        <span className="text-sm text-pink-500 mb-2">Dentre disso tudo...</span>
+        <span className="text-sm text-pink-500 mb-2">Dentro disso tudo...</span>
         <h4 className="font-title text-5xl font-bold max-w-2xl text-center tracking-tight">
           Por que escolher a{' '}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-pink-500">
@@ -12,8 +12,8 @@ export function Pricing() {
           </span>
         </h4>
         <p className="leading-relaxed mt-6 text-center max-w-2xl">
-          Alguns depoimentos de nossos clientes e usuários sobre nossos
-          produtos.
+          Aproveite tudo por zero de taxa de contratação e utilização de nossos
+          serviços primários.
         </p>
       </div>
 
@@ -27,7 +27,7 @@ export function Pricing() {
         <div className="flex flex-col gap-6 mt-6">
           <p className="text-zinc-500">O produto ideal para seu RH</p>
           <strong className="font-title text-5xl font-black tracking-tighter text-zinc-800">
-            R$ 00,00
+            Grátis
           </strong>
           <button className="py-4 rounded-lg bg-pink-400 text-white font-bold border-2 border-pink-400 hover:bg-transparent hover:text-zinc-600 transition-colors duration-150">
             Contratar agora

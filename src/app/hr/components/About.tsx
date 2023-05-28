@@ -6,7 +6,7 @@ export function About() {
   return (
     <section className="w-full py-20 ">
       <div className="w-full max-w-7xl mx-auto flex justify-between items-center">
-        <Image src={about} alt="" />
+        <Image src={about} alt="" className="max-w-lg w-full" />
         <div className="max-w-2xl">
           <span className="text-sm text-pink-500 mb-2">
             Pra que complexidade?
