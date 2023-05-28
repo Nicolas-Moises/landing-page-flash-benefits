@@ -5,9 +5,9 @@ import cards from '../assets/cards.png'
 export function About() {
   return (
     <section className="w-full py-20">
-      <div className="w-full max-w-7xl mx-auto flex justify-center gap-16 items-center">
+      <div className="w-full max-w-7xl mx-auto flex justify-between gap-16 items-center">
         <Image src={cards} alt="" />
-        <div className="max-w-lg">
+        <div className="max-w-xl">
           <span className="text-sm text-pink-500 mb-2">Facilidade</span>
           <h4 className="font-title text-5xl font-bold">
             Tudo, tudo, tudo em um só{' '}
