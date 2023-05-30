@@ -4,6 +4,8 @@ import { Nunito_Sans, Familjen_Grotesk } from 'next/font/google'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 
+import 'keen-slider/keen-slider.min.css'
+
 const nunito = Nunito_Sans({ subsets: ['latin'] })
 const familjenGrotesk = Familjen_Grotesk({
   subsets: ['latin'],

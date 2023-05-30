@@ -1,10 +1,23 @@
-import { Car, Sandwich, ShoppingCart, Utensils } from 'lucide-react'
+'use client'
+
+import {
+  ArrowLeft,
+  ArrowRight,
+  Car,
+  GraduationCap,
+  Sandwich,
+  ShoppingCart,
+  Stethoscope,
+  Utensils,
+} from 'lucide-react'
 import { CategorieCard } from './CategorieCard'
 
 import market from '../assets/market.jpg'
 import restaurant from '../assets/restaurant.jpg'
 import food from '../assets/food.jpg'
 import mobility from '../assets/mobility.webp'
+
+import { useKeenSlider } from 'keen-slider/react'
 
 const cards = [
   {
@@ -46,25 +59,36 @@ const cards = [
     icon: Car,
     coverUrl: mobility,
   },
-  // {
-  //     id: 5,
-  //     category: 'Saúde',
-  //     description: 'Aceito em estabelecimentos como laboratórios, consultas e outras categorias do segmento.',
-  //     link: '#',
-  //     icon: Stethoscope,
-  // },
-  // {
-  //     id: 6,
-  //     category: 'Educação',
-  //     description: 'Aceito em estabelecimentos como creches, escolas primárias, faculdades, cursos técnicos e cursos de idiomas.',
-  //     link: '#',
-  //     icon: GraduationCap,
-  // }
+  {
+    id: 5,
+    category: 'Saúde',
+    description:
+      'Aceito em estabelecimentos como laboratórios, consultas e outras categorias do segmento.',
+    link: '#',
+    icon: Stethoscope,
+    coverUrl: mobility,
+  },
+  {
+    id: 6,
+    category: 'Educação',
+    description:
+      'Aceito em estabelecimentos como creches, escolas primárias, faculdades, cursos técnicos e cursos de idiomas.',
+    link: '#',
+    icon: GraduationCap,
+    coverUrl: mobility,
+  },
 ]
 
 export function Benefits() {
+  const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
+    loop: true,
+    slides: {
+      perView: 4,
+      spacing: 16,
+    },
+  })
   return (
-    <section className="w-full py-20 max-w-7xl mx-auto">
+    <section className="w-full py-20 max-w-7xl mx-auto flex flex-col">
       <div className="flex flex-col items-center">
         <span className="text-sm text-pink-500 mb-2">Categorias</span>
         <h4 className="font-title text-5xl font-bold max-w-2xl text-center">
@@ -80,7 +104,7 @@ export function Benefits() {
         </p>
       </div>
 
-      <div className="flex gap-6 items-center mt-20">
+      <div className="keen-slider mt-20" ref={sliderRef}>
         {cards.map((card) => {
           return (
             <CategorieCard
@@ -94,6 +118,24 @@ export function Benefits() {
             />
           )
         })}
+      </div>
+
+      <div className="flex gap-10 self-end mt-10">
+        <ArrowLeft
+          size={24}
+          className="cursor-pointer text-zinc-500"
+          onClick={(e: any) =>
+            e.stopPropagation() || instanceRef.current?.prev()
+          }
+        />
+
+        <ArrowRight
+          size={24}
+          className="cursor-pointer text-zinc-500"
+          onClick={(e: any) =>
+            e.stopPropagation() || instanceRef.current?.next()
+          }
+        />
       </div>
     </section>
   )

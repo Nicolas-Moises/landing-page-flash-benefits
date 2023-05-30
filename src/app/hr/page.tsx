@@ -1,3 +1,4 @@
+import { Benefits } from '@/components/Benefits'
 import { About } from './components/About'
 import { Cta } from './components/Cta'
 import { Features } from './components/Features'
@@ -12,6 +13,7 @@ export default function HumanResources() {
       <Stats />
       <About />
       <Features />
+      <Benefits />
       <Pricing />
       <Cta />
     </div>

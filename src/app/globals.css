@@ -11,6 +11,10 @@ body {
     animation: menu-animate 0.5s ease;
 }
 
+.dot-active {
+    @apply bg-zinc-700;
+}
+
 @keyframes menu-animate {
     from {
         right: -100vw;

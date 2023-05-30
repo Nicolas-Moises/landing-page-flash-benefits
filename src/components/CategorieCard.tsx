@@ -14,7 +14,7 @@ interface CategorieCardProps {
 
 export function CategorieCard(props: CategorieCardProps) {
   return (
-    <div className="pb-6 rounded-tl-[60px] rounded-br-[60px] bg-white max-w-xs w-full h-[400px] flex flex-col border-2 border-pink-500/10 relative overflow-hidden">
+    <div className="pb-6 rounded-tl-[60px] rounded-br-[60px] bg-white max-w-xs w-full h-[400px] flex flex-col border-2 border-pink-500/10 relative overflow-hidden keen-slider__slide">
       {props.tag && (
         <div className="absolute top-4 right-6 text-xs px-1 py-px font-medium rounded-md bg-white border border-zinc-500/10 text-zinc-500">
           {props.tag}
