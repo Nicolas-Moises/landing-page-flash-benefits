@@ -11,7 +11,7 @@ export function About() {
           <span className="text-sm text-pink-500 mb-2">
             Pra que complexidade?
           </span>
-          <h4 className="font-title text-5xl font-bold tracking-tight">
+          <h4 className="font-title text-zinc-700 text-5xl font-bold tracking-tight">
             Plataforma de gestão{' '}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-pink-500">
               decomplicada

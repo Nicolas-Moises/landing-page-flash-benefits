@@ -47,7 +47,7 @@ export function SubMenuProducts(props: SubMenuProductsProps) {
                     </p>
                   </Link>
                   <Link
-                    href="#"
+                    href="/expense"
                     className="flex flex-col gap-4 max-w-xs group hover:bg-zinc-50 rounded-lg transition-colors duration-150 p-4"
                   >
                     <div className="flex items-center gap-3">

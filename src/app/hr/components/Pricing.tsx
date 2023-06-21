@@ -5,7 +5,7 @@ export function Pricing() {
     <section className="w-full py-20 max-w-7xl mx-auto flex flex-col items-center">
       <div className="flex flex-col items-center ">
         <span className="text-sm text-pink-500 mb-2">Dentro disso tudo...</span>
-        <h4 className="font-title text-5xl font-bold max-w-2xl text-center tracking-tight">
+        <h4 className="font-title text-5xl text-zinc-700 font-bold max-w-2xl text-center tracking-tight">
           Por que escolher a{' '}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-pink-500">
             Flash?
@@ -17,7 +17,7 @@ export function Pricing() {
         </p>
       </div>
 
-      <div className="mt-20 w-full max-w-xl border-2 border-pink-500/20 rounded-tl-[100px] rounded-br-[100px] px-12 py-14">
+      <div className="mt-20 w-full max-w-lg border-2 border-pink-500/20 rounded-tl-[100px] rounded-br-[100px] px-12 py-14">
         <div className="flex justify-between items-center">
           <span className="font-extrabold text-lg text-zinc-500">Gestão</span>
           <span className="text-sm py-1 px-3 rounded-full bg-pink-500 font-bold text-white">
@@ -26,10 +26,10 @@ export function Pricing() {
         </div>
         <div className="flex flex-col gap-6 mt-6">
           <p className="text-zinc-500">O produto ideal para seu RH</p>
-          <strong className="font-title text-5xl font-black tracking-tighter text-zinc-800">
-            Grátis
+          <strong className="font-title text-5xl font-bold tracking-tighter text-zinc-700">
+            Sem custo
           </strong>
-          <button className="py-4 rounded-lg bg-pink-400 text-white font-bold border-2 border-pink-400 hover:bg-transparent hover:text-zinc-600 transition-colors duration-150">
+          <button className="py-4 rounded-lg bg-pink-600 text-white font-bold border-2 border-pink-400 hover:bg-transparent hover:text-zinc-600 transition-colors duration-150">
             Contratar agora
           </button>
           <div className="flex flex-col gap-4 w-full mt-6 items-start">

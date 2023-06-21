@@ -13,7 +13,7 @@ export function Footer() {
             <ul className="flex gap-6 divide-x-2 divide-zinc-400/20 mt-6">
               <li>
                 <Link
-                  href="#"
+                  href="hr"
                   className="text-zinc-500 hover:text-pink-500 font-medium"
                 >
                   Flash Benefícios

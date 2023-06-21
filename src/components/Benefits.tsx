@@ -91,7 +91,7 @@ export function Benefits() {
     <section className="w-full py-20 max-w-7xl mx-auto flex flex-col">
       <div className="flex flex-col items-center">
         <span className="text-sm text-pink-500 mb-2">Categorias</span>
-        <h4 className="font-title text-5xl font-bold max-w-2xl text-center">
+        <h4 className="font-title text-5xl font-bold max-w-2xl text-center text-zinc-700">
           Tenha mais{' '}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-pink-500">
             poder de escolha
@@ -123,7 +123,7 @@ export function Benefits() {
       <div className="flex gap-10 self-end mt-10">
         <ArrowLeft
           size={24}
-          className="cursor-pointer text-zinc-500"
+          className="cursor-pointer text-zinc-500 hover:text-pink-400"
           onClick={(e: any) =>
             e.stopPropagation() || instanceRef.current?.prev()
           }
@@ -131,7 +131,7 @@ export function Benefits() {
 
         <ArrowRight
           size={24}
-          className="cursor-pointer text-zinc-500"
+          className="cursor-pointer text-zinc-500 hover:text-pink-400"
           onClick={(e: any) =>
             e.stopPropagation() || instanceRef.current?.next()
           }

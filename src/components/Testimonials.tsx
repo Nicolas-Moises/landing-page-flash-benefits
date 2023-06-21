@@ -4,6 +4,7 @@ import person1 from '../assets/person-1.png'
 import person2 from '../assets/person-2.webp'
 import person3 from '../assets/person-3.webp'
 import { TestimonialCard } from './TestimonialCard'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 const testimonials = [
   {
@@ -36,7 +37,7 @@ const testimonials = [
 ]
 
 export function Testimonials() {
-  const [sliderRef] = useKeenSlider({
+  const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
     slides: {
       perView: 1,
@@ -44,7 +45,7 @@ export function Testimonials() {
     },
   })
   return (
-    <section className="w-full py-20 max-w-7xl mx-auto">
+    <section className="w-full py-20 max-w-7xl mx-auto flex flex-col">
       <div className="flex flex-col items-center">
         <span className="text-sm text-pink-500 mb-2">Quem é Flash, ama</span>
         <h4 className="font-title text-5xl font-bold max-w-2xl text-center tracking-tight">
@@ -73,6 +74,23 @@ export function Testimonials() {
             )
           })}
         </div>
+      </div>
+      <div className="flex gap-10 self-end mt-10">
+        <ArrowLeft
+          size={24}
+          className="cursor-pointer text-zinc-500 hover:text-pink-400"
+          onClick={(e: any) =>
+            e.stopPropagation() || instanceRef.current?.prev()
+          }
+        />
+
+        <ArrowRight
+          size={24}
+          className="cursor-pointer text-zinc-500 hover:text-pink-400"
+          onClick={(e: any) =>
+            e.stopPropagation() || instanceRef.current?.next()
+          }
+        />
       </div>
     </section>
   )

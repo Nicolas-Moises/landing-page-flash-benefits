@@ -6,11 +6,12 @@ import { Footer } from '@/components/Footer'
 
 import 'keen-slider/keen-slider.min.css'
 
-const nunito = Nunito_Sans({ subsets: ['latin'] })
+const nunito = Nunito_Sans({ subsets: ['latin'], variable: '--font-nunito', display: 'swap', })
 const familjenGrotesk = Familjen_Grotesk({
   subsets: ['latin'],
   variable: '--font-familjen-grotesk',
   weight: '700',
+  display: 'swap',
 })
 
 export const metadata = {
@@ -22,7 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body
-        className={`${nunito.className} ${familjenGrotesk.variable} bg-zinc-50 text-pink-800 font-sans`}
+        className={`${nunito.variable} ${familjenGrotesk.variable} bg-zinc-50 text-pink-800 font-sans`}
       >
         <Header />
         {children}

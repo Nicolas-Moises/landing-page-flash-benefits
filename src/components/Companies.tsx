@@ -1,39 +1,12 @@
 'use client'
 
-import companyOne from '../assets/company-1.png'
-import companyTwo from '../assets/company-2.png'
+import companyOne from '../assets/company-1.webp'
+import companyTwo from '../assets/company-2.webp'
 import companyThree from '../assets/company-3.png'
 import companyFour from '../assets/company-4.png'
 import companyFive from '../assets/company-5.png'
 import companySix from '../assets/company-6.png'
 import Image from 'next/image'
-
-const companies = [
-  {
-    id: 1,
-    logoUrl: companyOne,
-  },
-  {
-    id: 2,
-    logoUrl: companyTwo,
-  },
-  {
-    id: 3,
-    logoUrl: companyThree,
-  },
-  {
-    id: 4,
-    logoUrl: companyFour,
-  },
-  {
-    id: 5,
-    logoUrl: companyFive,
-  },
-  {
-    id: 6,
-    logoUrl: companySix,
-  },
-]
 
 export function Companies() {
   return (
@@ -45,18 +18,37 @@ export function Companies() {
         </span>{' '}
         da burocracia
       </h4>
-      <div className="items-center mt-20 mx-auto grid grid-cols-6 w-full max-w-7xl">
-        {companies.map((company) => {
-          return (
-            <div className="flex items-center justify-center" key={company.id}>
-              <Image
-                src={company.logoUrl}
-                alt=""
-                className="object-contain opacity-70 w-1/2 max-h-12 hover:opacity-90 transition-opacity"
-              />
-            </div>
-          )
-        })}
+      <div className="mx-auto mt-10 grid grid-cols-4 items-center gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:grid-cols-6 max-w-7xl">
+        <Image
+          src={companyOne}
+          alt=""
+          className="col-span-2 max-h-16 w-full object-contain lg:col-span-1"
+        />
+        <Image
+          src={companyTwo}
+          alt=""
+          className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
+        />
+        <Image
+          src={companyThree}
+          alt=""
+          className="col-span-2 max-h-7 w-full object-contain lg:col-span-1"
+        />
+        <Image
+          src={companyFour}
+          alt=""
+          className="col-span-2 max-h-8 w-full object-contain lg:col-span-1"
+        />
+        <Image
+          src={companyFive}
+          alt=""
+          className="col-span-2 max-h-6 w-full object-contain sm:col-start-2 lg:col-span-1"
+        />
+        <Image
+          src={companySix}
+          alt=""
+          className="col-span-2 col-start-2 max-h-8 w-full object-contain sm:col-start-auto lg:col-span-1"
+        />
       </div>
     </section>
   )

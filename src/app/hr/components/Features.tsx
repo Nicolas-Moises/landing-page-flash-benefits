@@ -6,7 +6,7 @@ export function Features() {
     <section className="w-full py-20 max-w-7xl mx-auto">
       <div className="flex flex-col items-center">
         <span className="text-sm text-pink-500 mb-2">Exclusividade</span>
-        <h4 className="font-title text-5xl font-bold max-w-2xl text-center">
+        <h4 className="font-title text-5xl font-bold max-w-2xl text-center text-zinc-700">
           Produtos{' '}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-pink-500">
             exclusivos

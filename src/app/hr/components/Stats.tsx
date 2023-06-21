@@ -1,30 +1,30 @@
 export function Stats() {
   return (
-    <section className="w-full px-6 bg-pink-100 -skew-y-2 -skew-x-3 -mt-6 z-30">
-      <div className="w-full mx-7xl mx-auto  py-14 px-20 flex flex-col gap-10 md:gap-0 md:flex-row justify-around bg-white dark:bg-white/5 rounded-xl max-w-7xl">
+    <section className="w-full px-6 bg-gradient-to-bl from-pink-300 via-pink-500 to-pink-300 -skew-y-2 -skew-x-3 -mt-6 z-30">
+      <div className="w-full mx-7xl mx-auto  py-14 px-20 flex flex-col gap-10 md:gap-0 md:flex-row justify-around rounded-xl max-w-7xl">
         <div className="flex items-center gap-4">
-          <span className="text-5xl font-title font-extrabold text-zinc-600">
+          <span className="text-5xl font-title font-extrabold text-white">
             +7K
           </span>
-          <p className="text-zinc-500">Empresas</p>
+          <p className="text-white">Empresas</p>
         </div>
 
-        <div className="md:w-px md:h-24 w-full h-px bg-zinc-400/20" />
+        <div className="md:w-px md:h-24 w-full h-px" />
 
         <div className="flex items-center gap-4">
-          <span className="text-5xl font-title font-extrabold text-zinc-600">
+          <span className="text-5xl font-title font-extrabold text-white">
             +600K
           </span>
-          <p className="text-zinc-500">Usuários</p>
+          <p className="text-white">Usuários</p>
         </div>
 
-        <div className="md:w-px md:h-24 w-full h-px bg-zinc-400/20" />
+        <div className="md:w-px md:h-24 w-full h-px" />
 
         <div className="flex items-center gap-4">
-          <span className="text-5xl font-title font-extrabold text-zinc-600">
+          <span className="text-5xl font-title font-extrabold text-white">
             +4M
           </span>
-          <p className="text-zinc-500">Estabelecimentos</p>
+          <p className="text-white">Estabelecimentos</p>
         </div>
       </div>
     </section>

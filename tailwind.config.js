@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         title: 'var(--font-familjen-grotesk)',
+        sans: 'var(--font-nunito)'
       },
       keyframes: {
         enterFromUp: {
@@ -26,9 +27,10 @@ module.exports = {
           300: '#F0AAB4',
           400: '#FF738C',
           500: '#FE2B8F',
-          600: '#C8195A',
-          700: '#78003C',
-          800: '#3C2D37',
+          600: '#FF4478',
+          700: '#C8195A',
+          800: '#78003C',
+          900: '#3C2D37',
         },
       },
       blur: {
