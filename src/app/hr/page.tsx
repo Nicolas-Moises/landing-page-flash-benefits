@@ -5,6 +5,7 @@ import { Features } from './components/Features'
 import { Hero } from './components/Hero'
 import { Pricing } from './components/Pricing'
 import { Stats } from './components/Stats'
+import { Faq } from './components/Faq'
 
 export default function HumanResources() {
   return (
@@ -15,6 +16,7 @@ export default function HumanResources() {
       <Features />
       <Benefits />
       <Pricing />
+      <Faq />
       <Cta />
     </div>
   )

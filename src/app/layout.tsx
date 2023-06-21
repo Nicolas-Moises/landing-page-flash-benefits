@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body
-        className={`${nunito.variable} ${familjenGrotesk.variable} bg-zinc-50 text-pink-800 font-sans`}
+        className={`${nunito.variable} ${familjenGrotesk.variable} bg-zinc-50 text-zinc-600 font-sans`}
       >
         <Header />
         {children}
