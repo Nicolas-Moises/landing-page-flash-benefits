@@ -2,6 +2,7 @@
 
 import * as Accordion from '@radix-ui/react-accordion';
 import { ChevronDown } from 'lucide-react';
+import Link from 'next/link';
 
 const questions = [
     {
@@ -75,6 +76,12 @@ export function Faq() {
                         )
                     })}    
                 </Accordion.Root>
+            </div>
+
+            <div className='mt-8 w-full'>
+                <span className='text-xs text-zinc-500'>
+                    Não encontrou o que procurava? Acesse nossa <Link href="#" className='text-pink-400 hover:text-pink-500'>faq completa</Link>
+                </span>
             </div>
     </section>
     )

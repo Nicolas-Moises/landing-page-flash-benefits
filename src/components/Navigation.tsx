@@ -16,10 +16,10 @@ export function Navigation() {
             </span>
           </SubMenuProducts>
         </li>
-        <li className="text-sm font-semibold text-zinc-500 hover:text-pink-400">
+        <li className="text-sm font-semibold text-zinc-500 hover:text-pink-500">
           <a href="#">Colaboradores</a>
         </li>
-        <li className="text-sm font-semibold text-zinc-500 hover:text-pink-400">
+        <li className="text-sm font-semibold text-zinc-500 hover:text-pink-500">
           <a href="#">Blog</a>
         </li>
       </ul>

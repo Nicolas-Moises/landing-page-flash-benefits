@@ -29,37 +29,37 @@ export function SubMenuProducts(props: SubMenuProductsProps) {
               <div className="max-w-7xl w-full mx-auto flex gap-10 divide-x divide-zinc-400/20 items-start py-10">
                 <div className="grid grid-cols-2 gap-6">
                   <Link
-                    className="flex flex-col gap-4 max-w-xs group hover:bg-zinc-50 rounded-lg transition-colors duration-150 p-4"
+                    className="flex flex-col gap-4 max-w-xs group hover:bg-pink-50 rounded-lg transition-colors duration-150 p-4"
                     href="/hr"
                   >
                     <div className="flex items-center gap-3">
                       <div className="bg-pink-100 p-3 rounded-md">
                         <CreditCard size={18} className="text-zinc-500" />
                       </div>
-                      <span className="text-lg text-zinc-600 group-hover:text-pink-400">
+                      <span className="text-lg text-zinc-600 group-hover:text-pink-400 font-title">
                         Flash Benefícios
                       </span>
                     </div>
 
-                    <p className="text-sm text-zinc-400">
+                    <p className="text-sm text-zinc-500">
                       A melhor solução para fornecer benefícios aos seus
                       colaboradores
                     </p>
                   </Link>
                   <Link
                     href="/expense"
-                    className="flex flex-col gap-4 max-w-xs group hover:bg-zinc-50 rounded-lg transition-colors duration-150 p-4"
+                    className="flex flex-col gap-4 max-w-xs group hover:bg-pink-50 rounded-lg transition-colors duration-150 p-4"
                   >
                     <div className="flex items-center gap-3">
                       <div className="bg-pink-100 p-3 rounded-md">
                         <Building2 size={18} className="text-zinc-500" />
                       </div>
-                      <span className="text-lg text-zinc-600 group-hover:text-pink-400">
+                      <span className="text-lg text-zinc-600 group-hover:text-pink-400 font-title">
                         Flash Expense
                       </span>
                     </div>
 
-                    <p className="text-sm text-zinc-400">
+                    <p className="text-sm text-zinc-500">
                       Tenha mais controle e segurança sobre a gestão das
                       despesas da sua empresa
                     </p>
@@ -67,18 +67,18 @@ export function SubMenuProducts(props: SubMenuProductsProps) {
 
                   <Link
                     href="#"
-                    className="flex flex-col gap-4 max-w-xs group hover:bg-zinc-50 rounded-lg transition-colors duration-150 p-4"
+                    className="flex flex-col gap-4 max-w-xs group hover:bg-pink-50 rounded-lg transition-colors duration-150 p-4"
                   >
                     <div className="flex items-center gap-3">
                       <div className="bg-pink-100 p-3 rounded-md">
                         <Users size={18} className="text-zinc-500" />
                       </div>
-                      <span className="text-lg text-zinc-600 group-hover:text-pink-400">
+                      <span className="text-lg text-zinc-600 group-hover:text-pink-400 font-title">
                         Flash People
                       </span>
                     </div>
 
-                    <p className="text-sm text-zinc-400">
+                    <p className="text-sm text-zinc-500">
                       Tenha mais controle e segurança sobre a gestão das
                       despesas da sua empresa.
                     </p>
@@ -86,18 +86,18 @@ export function SubMenuProducts(props: SubMenuProductsProps) {
 
                   <Link
                     href="#"
-                    className="flex flex-col gap-4 max-w-xs group hover:bg-zinc-50 rounded-lg transition-colors duration-150 p-4"
+                    className="flex flex-col gap-4 max-w-xs group hover:bg-pink-50 rounded-lg transition-colors duration-150 p-4"
                   >
                     <div className="flex items-center gap-3">
                       <div className="bg-pink-100 p-3 rounded-md">
                         <Calendar size={18} className="text-zinc-500" />
                       </div>
-                      <span className="text-lg text-zinc-600 group-hover:text-pink-400">
+                      <span className="text-lg text-zinc-600 group-hover:text-pink-400 font-title">
                         Folha Certa
                       </span>
                     </div>
 
-                    <p className="text-sm text-zinc-400">
+                    <p className="text-sm text-zinc-500">
                       A plataforma mais completa para a gestão e controle de
                       ponto
                     </p>
@@ -106,7 +106,7 @@ export function SubMenuProducts(props: SubMenuProductsProps) {
 
                 <div className="flex-1 pl-10 flex flex-col gap-4">
                   <h2 className="font-title text-lg font-bold text-zinc-600">
-                    Melhores preços
+                      Confira nossos parceiros
                   </h2>
                   <p className="text-zinc-500">
                     Acesse agora mesmo e simule as opções que melhor se encaixam

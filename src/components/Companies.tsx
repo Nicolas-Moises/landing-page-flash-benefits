@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 export function Companies() {
   return (
-    <section className="w-full bg-pink-100 py-20 relative">
+    <section className="w-full bg-pink-100 drop-shadow-2xl py-20 relative">
       <h4 className="font-extrabold font-title text-3xl text-center tracking-tight">
         Faça como essas empresas e{' '}
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-pink-500">

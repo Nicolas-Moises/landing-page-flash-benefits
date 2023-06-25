@@ -1,6 +1,6 @@
 export function Stats() {
   return (
-    <section className="w-full px-6 bg-gradient-to-bl from-pink-300 via-pink-500 to-pink-300 -skew-y-2 -skew-x-3 -mt-6 z-30">
+    <section className="w-full px-6 bg-gradient-to-bl from-pink-300 via-pink-400 to-pink-200 -skew-y-2 -skew-x-3 -mt-6 z-30">
       <div className="w-full mx-7xl mx-auto  py-14 px-20 flex flex-col gap-10 md:gap-0 md:flex-row justify-around rounded-xl max-w-7xl">
         <div className="flex items-center gap-4">
           <span className="text-5xl font-title font-extrabold text-white">
