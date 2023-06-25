@@ -56,25 +56,25 @@ export function Faq() {
             </div>
 
             <div className='w-full mt-12'>
-                {questions.map(question => {
-                    return (
-                        <Accordion.Root type='single' collapsible className='w-full'>
-                            <Accordion.Item value={question.value} key={question.id} className=''>
+                <Accordion.Root type="single" collapsible className='w-full'>
+                    {questions.map(question => {
+                        return (
+                            <Accordion.Item value={question.value} key={question.id} className='group'>
                                 <Accordion.Header className='py-5 border-b border-zinc-400/20'>
                                     <Accordion.Trigger className='w-full flex justify-between items-center'>
                                         <h4 className='text-zinc-700 text-lg font-title'>{question.title}</h4>
-                                        <ChevronDown />
+                                        <ChevronDown className='group-data-[state=open]:rotate-180 transition-transform duration-300' />
                                     </Accordion.Trigger>
                                 </Accordion.Header>
-                                <Accordion.Content>
-                                    <div className='py-5'>
+                                <Accordion.Content className='overflow-hidden data-[state=open]:animate-slideDown group-data-[state=closed]:animate-slideUp'>
+                                    <div className='py-5 text-base text-medium text-zinc-600'>
                                         {question.content}
                                     </div>
                                 </Accordion.Content>
                             </Accordion.Item>
-                        </Accordion.Root>
-                    )
-                })}    
+                        )
+                    })}    
+                </Accordion.Root>
             </div>
     </section>
     )

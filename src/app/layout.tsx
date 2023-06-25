@@ -6,11 +6,17 @@ import { Footer } from '@/components/Footer'
 
 import 'keen-slider/keen-slider.min.css'
 
-const nunito = Nunito_Sans({ subsets: ['latin'], variable: '--font-nunito', display: 'swap', })
+const nunito = Nunito_Sans({ 
+  subsets: ['latin'], 
+  variable: '--font-nunito', 
+  display: 'swap', 
+})
 const familjenGrotesk = Familjen_Grotesk({
   subsets: ['latin'],
   variable: '--font-familjen-grotesk',
+  fallback: ['system-ui', 'mono'],
   weight: '700',
+  preload: true,
   display: 'swap',
 })
 
