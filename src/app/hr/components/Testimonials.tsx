@@ -65,7 +65,8 @@ export function Testimonials() {
                             width={100} 
                             height={100} 
                             alt="" 
-                            className='w-14 h-14 rounded-full border-2 ring-2 ring-pink-500 border-white group-data-[state=active]:ring-pink-600 group-data-[state=inactive]:opacity-50' 
+                            className='w-14 h-14 rounded-full border-2 ring-2 ring-pink-500 border-white group-data-[state=active]:ring-pink-600 
+                            group-data-[state=inactive]:opacity-40' 
                         />
                     </Tabs.Trigger>
                 )

@@ -56,7 +56,7 @@ export function Faq() {
                 </p>
             </div>
 
-            <div className='w-full mt-12'>
+            <div className='w-full mt-12 max-w-5xl '>
                 <Accordion.Root type="single" collapsible className='w-full'>
                     {questions.map(question => {
                         return (
@@ -76,13 +76,13 @@ export function Faq() {
                         )
                     })}    
                 </Accordion.Root>
+                <div className='mt-8 w-full'>
+                    <span className='text-xs text-zinc-500'>
+                        Não encontrou o que procurava? Acesse nossa <Link href="#" className='text-pink-400 hover:text-pink-500'>faq completa</Link>
+                    </span>
+                </div>
             </div>
 
-            <div className='mt-8 w-full'>
-                <span className='text-xs text-zinc-500'>
-                    Não encontrou o que procurava? Acesse nossa <Link href="#" className='text-pink-400 hover:text-pink-500'>faq completa</Link>
-                </span>
-            </div>
     </section>
     )
 }
