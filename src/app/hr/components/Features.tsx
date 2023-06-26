@@ -54,9 +54,14 @@ export function Features() {
 
         {features.map(feature => {
           return (
-            <div className="group flex flex-col gap-2 items-start justify-between p-8 border border-dashed border-zinc-400/20 flex-1 h-full hover:bg-gradient-to-tr from-pink-100 via-pink-50 to-pink-500/20 transition-colors duration-150" key={feature.id}>
+            <div 
+              className="group flex flex-col gap-2 items-start justify-between p-8 border border-dashed border-zinc-400/20 flex-1 h-full hover:bg-gradient-to-tr 
+              from-pink-100 via-pink-50 to-pink-500/20 transition-colors duration-150" 
+              key={feature.id}
+            >
               <div className='flex items-center gap-4'>
-                <div className="p-2 rounded-full bg-gradient-to-r from-pink-400 to-pink-500 border border-pink-400 text-white group-hover:text-pink-500 group-hover:bg-none transition-all duration-200">
+                <div className="p-2 rounded-full bg-gradient-to-r from-pink-400 to-pink-500 border border-pink-400 text-white group-hover:text-pink-500 
+                group-hover:bg-none transition-all duration-200">
                   {feature.icon}
                 </div>
                 <h2 className="text-lg font-bold text-zinc-600">{feature.title}</h2>

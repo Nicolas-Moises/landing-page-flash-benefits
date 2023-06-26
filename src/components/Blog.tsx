@@ -52,7 +52,7 @@ export function Blog() {
           href="#"
           className="font-bold text-sm text-pink-400 flex items-center gap-2 group hover:text-pink-500 transition-colors"
         >
-          Ver tudo
+          Acessar blog
           <ArrowRight
             size={16}
             className="group-hover:translate-x-1 transition-all duration-150"

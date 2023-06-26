@@ -60,7 +60,7 @@ export function Testimonials() {
         </p>
       </div>
       <div className="max-w-4xl w-full mx-auto">
-        <div className="keen-slider mt-20" ref={sliderRef}>
+        <div className="keen-slider mt-20 cursor-grab active:cursor-grabbing" ref={sliderRef}>
           {testimonials.map((message) => {
             return (
               <TestimonialCard

@@ -104,7 +104,7 @@ export function Benefits() {
         </p>
       </div>
 
-      <div className="keen-slider mt-20 cursor-grab" ref={sliderRef}>
+      <div className="keen-slider mt-20 cursor-grab active:cursor-grabbing" ref={sliderRef}>
         {cards.map((card) => {
           return (
             <CategorieCard

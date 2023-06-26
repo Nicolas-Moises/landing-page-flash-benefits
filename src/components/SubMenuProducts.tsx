@@ -131,7 +131,7 @@ export function SubMenuProducts(props: SubMenuProductsProps) {
         </NavigationMenu.Item>
         <NavigationMenu.Indicator />
       </NavigationMenu.List>
-      <NavigationMenu.Viewport />
+      <NavigationMenu.Viewport className='' />
     </NavigationMenu.Root>
   )
 }
