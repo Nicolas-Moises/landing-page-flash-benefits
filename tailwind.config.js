@@ -28,6 +28,24 @@ module.exports = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: 0 },
         },
+
+        scaleIn: {
+          from: { opacity: 0, transform: 'rotateX(-10deg) scale(0.9)' },
+          to: { opacity: 1, transform: 'rotateX(0deg) scale(1)' },
+        },
+        scaleOut: {
+          from: { opacity: 1, transform: 'rotateX(0deg) scale(1)' },
+          to: { opacity: 0, transform: 'rotateX(-10deg) scale(0.95)' },
+        },
+
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+        fadeOut: {
+          from: { opacity: 1 },
+          to: { opacity: 0 },
+        },
        
       },
       animation: {
@@ -35,7 +53,12 @@ module.exports = {
         slideDown: 'slideDown 300ms ease-out',
         slideUp: 'slideUp 300ms ease-out',
         dropMenu: 'dropMenu 300ms ease-out',
+        
+        scaleIn: 'scaleIn 300ms ease',
+        scaleOut: 'scaleOut 200ms ease',
 
+        fadeIn: 'fadeIn 200ms ease',
+        fadeOut: 'fadeOut 200ms ease',
       },
       colors: {
         pink: {
