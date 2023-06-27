@@ -9,6 +9,7 @@ import 'keen-slider/keen-slider.min.css'
 const nunito = Nunito_Sans({ 
   subsets: ['latin'], 
   variable: '--font-nunito', 
+  fallback: ['system-ui', 'inter'],
   display: 'swap', 
 })
 const familjenGrotesk = Familjen_Grotesk({

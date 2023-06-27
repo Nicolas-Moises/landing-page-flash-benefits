@@ -28,7 +28,7 @@ export function Features() {
             />
 
 
-            <div className="grid grid-cols-3 gap-y-14 gap-x-16 mt-10">
+            <div className="grid grid-cols-3 gap-y-14 gap-x-16 mt-20">
                 <div className="flex gap-4 items-start">
                     <BarChart3 size={20} className="text-pink-600 w-5 h-5" />
                     <strong className="text-zinc-900 flex-1">

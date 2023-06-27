@@ -4,6 +4,7 @@ import { Excluses } from "./components/Excluses";
 import { Faq } from "./components/Faq";
 import { Features } from "./components/Features";
 import { Hero } from "./components/Hero";
+import { Pricing } from "./components/Pricing";
 import { Products } from "./components/Products";
 import { Testimonials } from "./components/Testimonials";
 
@@ -15,6 +16,7 @@ export default function Expense() {
             <Features />
             <Products />
             <Excluses />
+            <Pricing />
             <Testimonials />
             <Faq />
         </>

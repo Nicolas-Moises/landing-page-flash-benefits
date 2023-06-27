@@ -55,7 +55,7 @@ export function Testimonials() {
         </p>
       </div>
 
-      <Tabs.Root defaultValue={'1'} className='w-full flex flex-col justify-center items-center mt-20'>
+      <Tabs.Root defaultValue={'2'} className='w-full flex flex-col justify-center items-center mt-20'>
         <Tabs.List className='w-full max-w-4xl flex items-center gap-4 justify-center'>
             {testimonials.map(testimonial => {
                 return (
