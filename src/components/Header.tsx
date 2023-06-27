@@ -22,7 +22,7 @@ export function Header() {
         <div className="flex items-center gap-10">
           <a
             href=""
-            className="text-sm font-semibold text-zinc-600 hover:text-pink-400"
+            className="text-sm font-semibold text-zinc-600 hover:text-pink-600"
           >
             Entrar
           </a>
