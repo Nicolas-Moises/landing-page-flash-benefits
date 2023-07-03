@@ -6,8 +6,8 @@ import Link from 'next/link'
 
 export function Header() {
   return (
-    <header className="w-full bg-white/40 backdrop-blur-xl fixed top-0 left-0 right-0 z-50">
-      <div className="w-full max-w-7xl mx-auto flex items-center justify-between py-6">
+    <header className="fixed left-0 right-0 top-0 z-50 w-full bg-white/40 backdrop-blur-xl">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between py-6">
         <div className="flex items-center gap-20">
           <Link href="/">
             <Image
@@ -27,8 +27,8 @@ export function Header() {
             Entrar
           </a>
           <button
-            className="font-semibold text-sm px-3 py-2 rounded-full bg-pink-400 text-white flex items-center justify-center transition-colors duration-200
-                        border-2 border-pink-400 hover:bg-transparent hover:text-zinc-600"
+            className="flex items-center justify-center rounded-full border-2 border-pink-400 bg-pink-400 px-3 py-2 text-sm font-semibold text-white
+                        transition-colors duration-200 hover:bg-transparent hover:text-zinc-600"
           >
             Contratar agora
           </button>

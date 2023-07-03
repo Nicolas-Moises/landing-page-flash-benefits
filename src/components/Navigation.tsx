@@ -4,14 +4,14 @@ import { SubMenuProducts } from './SubMenuProducts'
 export function Navigation() {
   return (
     <nav>
-      <ul className="gap-10 flex items-center">
+      <ul className="flex items-center gap-10">
         <li className="text-sm font-semibold text-zinc-500">
           <SubMenuProducts>
-            <span className="flex gap-3 items-center relative cursor-pointer group">
+            <span className="group relative flex cursor-pointer items-center gap-3">
               Produtos
               <ChevronDown
                 size={16}
-                className="group-data-[state=open]:rotate-180 transition-transform duration-200 "
+                className="transition-transform duration-200 group-data-[state=open]:rotate-180 "
               />
             </span>
           </SubMenuProducts>

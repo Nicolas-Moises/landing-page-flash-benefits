@@ -5,16 +5,16 @@ import { Instagram, Linkedin, Twitter, Youtube } from 'lucide-react'
 
 export function Footer() {
   return (
-    <footer className="pt-14 pb-7 w-full border-t border-zinc-400/10">
-      <div className="w-full max-w-7xl mx-auto">
-        <div className="flex items-start pb-14 border-b border-zinc-400/20">
+    <footer className="w-full border-t border-zinc-400/10 pb-7 pt-14">
+      <div className="mx-auto w-full max-w-7xl">
+        <div className="flex items-start border-b border-zinc-400/20 pb-14">
           <div className="flex-1">
             <strong className="text-2xl">Quem compara, escolhe a Flash!</strong>
-            <ul className="flex gap-6 divide-x-2 divide-zinc-400/20 mt-6">
+            <ul className="mt-6 flex gap-6 divide-x-2 divide-zinc-400/20">
               <li>
                 <Link
                   href="hr"
-                  className="text-zinc-500 hover:text-pink-500 font-medium"
+                  className="font-medium text-zinc-500 hover:text-pink-500"
                 >
                   Flash Benefícios
                 </Link>
@@ -22,7 +22,7 @@ export function Footer() {
               <li className="pl-6">
                 <Link
                   href="#"
-                  className="text-zinc-500 hover:text-pink-500 font-medium"
+                  className="font-medium text-zinc-500 hover:text-pink-500"
                 >
                   Flash Expense
                 </Link>
@@ -30,7 +30,7 @@ export function Footer() {
               <li className="pl-6">
                 <Link
                   href="#"
-                  className="text-zinc-500 hover:text-pink-500 font-medium"
+                  className="font-medium text-zinc-500 hover:text-pink-500"
                 >
                   Flash Folha Certa
                 </Link>
@@ -38,7 +38,7 @@ export function Footer() {
               <li className="pl-6">
                 <Link
                   href="#"
-                  className="text-zinc-500 hover:text-pink-500 font-medium"
+                  className="font-medium text-zinc-500 hover:text-pink-500"
                 >
                   Flash People
                 </Link>
@@ -47,19 +47,19 @@ export function Footer() {
           </div>
 
           <div className="w-[542px]">
-            <div className="flex flex-col gap-3 w-full">
+            <div className="flex w-full flex-col gap-3">
               <label className="text-sm font-medium">
                 Inscreva-se em nossa FlashLetter
               </label>
-              <div className="w-full flex items-center gap-3">
+              <div className="flex w-full items-center gap-3">
                 <input
                   type="email"
-                  className="flex-1 p-5 text-sm h-14 bg-white border-2 border-pink-100 rounded-lg focus:outline-none focus:ring-2 ring-pink-500 placeholder:text-zinc-400 text-zinc-600"
+                  className="h-14 flex-1 rounded-lg border-2 border-pink-100 bg-white p-5 text-sm text-zinc-600 ring-pink-500 placeholder:text-zinc-400 focus:outline-none focus:ring-2"
                   placeholder="Digite seu e-mail"
                 />
                 <button
                   type="submit"
-                  className="rounded-lg h-14 px-5 flex items-center justify-center bg-pink-400 text-white font-semibold hover:bg-transparent transition-colors hover:text-zinc-500 border-2 border-pink-400"
+                  className="flex h-14 items-center justify-center rounded-lg border-2 border-pink-400 bg-pink-400 px-5 font-semibold text-white transition-colors hover:bg-transparent hover:text-zinc-500"
                 >
                   Inscrever
                 </button>
@@ -68,18 +68,18 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-between gap-10 mt-5 pb-5 border-b border-zinc-400/20">
+        <div className="mt-5 flex flex-wrap justify-between gap-10 border-b border-zinc-400/20 pb-5">
           <div className="flex flex-col items-start gap-6">
             <strong className="text-lg font-bold">Empresa</strong>
             <Link
               href="#"
-              className="text-zinc-500 hover:text-pink-500 font-medium"
+              className="font-medium text-zinc-500 hover:text-pink-500"
             >
               Soluções
             </Link>
             <Link
               href="#"
-              className="text-zinc-500 hover:text-pink-500 font-medium"
+              className="font-medium text-zinc-500 hover:text-pink-500"
             >
               Fale Conosco
             </Link>
@@ -88,13 +88,13 @@ export function Footer() {
             <strong className="text-lg font-bold">Mais informações</strong>
             <Link
               href="#"
-              className="text-zinc-500 hover:text-pink-500 font-medium"
+              className="font-medium text-zinc-500 hover:text-pink-500"
             >
               Trabalhe conosco
             </Link>
             <Link
               href="#"
-              className="text-zinc-500 hover:text-pink-500 font-medium"
+              className="font-medium text-zinc-500 hover:text-pink-500"
             >
               Central de ajuda
             </Link>
@@ -103,13 +103,13 @@ export function Footer() {
             <strong className="text-lg font-bold">Parcerias</strong>
             <Link
               href="#"
-              className="text-zinc-500 hover:text-pink-500 font-medium"
+              className="font-medium text-zinc-500 hover:text-pink-500"
             >
               Seja parceiro
             </Link>
             <Link
               href="#"
-              className="text-zinc-500 hover:text-pink-500 font-medium"
+              className="font-medium text-zinc-500 hover:text-pink-500"
             >
               Acessoria e imprensa
             </Link>
@@ -118,13 +118,13 @@ export function Footer() {
             <strong className="text-lg font-bold">Legal</strong>
             <Link
               href="#"
-              className="text-zinc-500 hover:text-pink-500 font-medium"
+              className="font-medium text-zinc-500 hover:text-pink-500"
             >
               Política de privacidade
             </Link>
             <Link
               href="#"
-              className="text-zinc-500 hover:text-pink-500 font-medium"
+              className="font-medium text-zinc-500 hover:text-pink-500"
             >
               Liberdade e privacidade
             </Link>
@@ -136,7 +136,7 @@ export function Footer() {
             <Image
               src={logo}
               alt="Logo Flash"
-              className="w-20 object-cover h-auto"
+              className="h-auto w-20 object-cover"
             />
 
             <ul className="flex items-center gap-4">
@@ -144,7 +144,7 @@ export function Footer() {
                 <Link href="#">
                   <Instagram
                     size={20}
-                    className="text-pink-400 hover:text-pink-500 transition-colors"
+                    className="text-pink-400 transition-colors hover:text-pink-500"
                   />
                 </Link>
               </li>
@@ -152,7 +152,7 @@ export function Footer() {
                 <Link href="#">
                   <Youtube
                     size={24}
-                    className="text-pink-400 hover:text-pink-500 transition-colors"
+                    className="text-pink-400 transition-colors hover:text-pink-500"
                   />
                 </Link>
               </li>
@@ -160,7 +160,7 @@ export function Footer() {
                 <Link href="#">
                   <Linkedin
                     size={20}
-                    className="text-pink-400 hover:text-pink-500 transition-colors"
+                    className="text-pink-400 transition-colors hover:text-pink-500"
                   />
                 </Link>
               </li>
@@ -168,17 +168,17 @@ export function Footer() {
                 <Link href="#">
                   <Twitter
                     size={20}
-                    className="text-pink-400 hover:text-pink-500 transition-colors"
+                    className="text-pink-400 transition-colors hover:text-pink-500"
                   />
                 </Link>
               </li>
             </ul>
           </div>
 
-          <span className="text-zinc-400 text-xs">
+          <span className="text-xs text-zinc-400">
             Inscrição no PAT 190679531
           </span>
-          <span className="text-zinc-400 text-xs">CNPJ 32.223.020/0001-18</span>
+          <span className="text-xs text-zinc-400">CNPJ 32.223.020/0001-18</span>
         </div>
       </div>
     </footer>

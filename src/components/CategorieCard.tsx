@@ -14,9 +14,9 @@ interface CategorieCardProps {
 
 export function CategorieCard(props: CategorieCardProps) {
   return (
-    <div className="pb-6 rounded-tl-[60px] rounded-br-[60px] bg-white max-w-xs w-full h-[400px] flex flex-col border-2 border-pink-500/10 relative overflow-hidden keen-slider__slide">
+    <div className="keen-slider__slide relative flex h-[400px] w-full max-w-xs flex-col overflow-hidden rounded-br-[60px] rounded-tl-[60px] border-2 border-pink-500/10 bg-white pb-6">
       {props.tag && (
-        <div className="absolute top-4 right-6 text-xs px-1 py-px font-medium rounded-md bg-white border border-zinc-500/10 text-zinc-500">
+        <div className="absolute right-6 top-4 rounded-md border border-zinc-500/10 bg-white px-1 py-px text-xs font-medium text-zinc-500">
           {props.tag}
         </div>
       )}
@@ -26,11 +26,11 @@ export function CategorieCard(props: CategorieCardProps) {
         alt=""
         width={540}
         height={400}
-        className="w-full aspect-video object-cover"
+        className="aspect-video w-full object-cover"
       />
-      <div className="mt-4 flex-1 flex flex-col justify-between px-4">
+      <div className="mt-4 flex flex-1 flex-col justify-between px-4">
         <div>
-          <div className="flex gap-3 items-center mb-3">
+          <div className="mb-3 flex items-center gap-3">
             {props.icon}
             <h4 className="font-title text-xl font-bold text-zinc-800">
               {props.category}
@@ -41,12 +41,12 @@ export function CategorieCard(props: CategorieCardProps) {
 
         <Link
           href={props.link}
-          className="font-bold text-sm text-pink-400 flex items-center gap-2 group hover:text-pink-500 transition-colors "
+          className="group flex items-center gap-2 text-sm font-bold text-pink-400 transition-colors hover:text-pink-500 "
         >
           Mais informações
           <ArrowRight
             size={16}
-            className="group-hover:translate-x-1 transition-all duration-150"
+            className="transition-all duration-150 group-hover:translate-x-1"
           />
         </Link>
       </div>

@@ -4,25 +4,25 @@ import card from '../assets/mock-corp.png'
 
 export function Corp() {
   return (
-    <section className="w-full pt-20 bg-pink-100 px-6">
-      <div className="w-full max-w-7xl mx-auto flex justify-between items-center">
+    <section className="w-full bg-pink-100 px-6 pt-20">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
         <div className="max-w-2xl">
-          <span className="text-sm text-pink-500 mb-2">Praticidade</span>
+          <span className="mb-2 text-sm text-pink-500">Praticidade</span>
           <h4 className="font-title text-5xl font-bold">
             Use o saldo corporativo e{' '}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-pink-500">
+            <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
               simplifique
             </span>{' '}
             a gestão de gastos da sua empresa
           </h4>
-          <p className="leading-relaxed mt-6">
+          <p className="mt-6 leading-relaxed">
             Pague suas despesas a trabalho no mesmo cartão. Gerencie os gastos e
             faça a prestação de contas direto no aplicativo. Simples e fácil.
           </p>
 
           <button
-            className="mt-6 px-8 py-4 rounded-lg bg-pink-400 text-white font-bold transition-colors duration-200
-                        border-2 border-pink-400 hover:bg-transparent hover:text-zinc-600"
+            className="mt-6 rounded-lg border-2 border-pink-400 bg-pink-400 px-8 py-4 font-bold text-white
+                        transition-colors duration-200 hover:bg-transparent hover:text-zinc-600"
           >
             Saiba mais
           </button>

@@ -45,22 +45,25 @@ export function Testimonials() {
     },
   })
   return (
-    <section className="w-full py-20 max-w-7xl mx-auto flex flex-col">
+    <section className="mx-auto flex w-full max-w-7xl flex-col py-20">
       <div className="flex flex-col items-center">
-        <span className="text-sm text-pink-500 mb-2">Quem é Flash, ama</span>
-        <h4 className="font-title text-5xl font-bold max-w-2xl text-center tracking-tight">
+        <span className="mb-2 text-sm text-pink-500">Quem é Flash, ama</span>
+        <h4 className="max-w-2xl text-center font-title text-5xl font-bold tracking-tight">
           Palavras de quem vive a{' '}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-pink-500">
+          <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
             liberdade
           </span>
         </h4>
-        <p className="leading-relaxed mt-6 text-center max-w-2xl">
+        <p className="mt-6 max-w-2xl text-center leading-relaxed">
           Alguns depoimentos de nossos clientes e usuários sobre nossos
           produtos.
         </p>
       </div>
-      <div className="max-w-4xl w-full mx-auto">
-        <div className="keen-slider mt-20 cursor-grab active:cursor-grabbing" ref={sliderRef}>
+      <div className="mx-auto w-full max-w-4xl">
+        <div
+          className="keen-slider mt-20 cursor-grab active:cursor-grabbing"
+          ref={sliderRef}
+        >
           {testimonials.map((message) => {
             return (
               <TestimonialCard
@@ -75,7 +78,7 @@ export function Testimonials() {
           })}
         </div>
       </div>
-      <div className="flex gap-10 self-end mt-10">
+      <div className="mt-10 flex gap-10 self-end">
         <ArrowLeft
           size={24}
           className="cursor-pointer text-zinc-500 hover:text-pink-400"

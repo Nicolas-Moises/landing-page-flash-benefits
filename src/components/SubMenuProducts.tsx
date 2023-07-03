@@ -24,19 +24,19 @@ export function SubMenuProducts(props: SubMenuProductsProps) {
           <NavigationMenu.Trigger asChild>
             {props.children}
           </NavigationMenu.Trigger>
-          <NavigationMenu.Content className="w-full bg-white absolute top-[88px] right-0 left-0 z-50">
+          <NavigationMenu.Content className="absolute left-0 right-0 top-[88px] z-50 w-full bg-white">
             <NavigationMenu.Link asChild>
-              <div className="max-w-7xl w-full mx-auto flex gap-10 divide-x divide-zinc-400/20 items-start py-10">
+              <div className="mx-auto flex w-full max-w-7xl items-start gap-10 divide-x divide-zinc-400/20 py-10">
                 <div className="grid grid-cols-2 gap-6">
                   <Link
-                    className="flex flex-col gap-4 max-w-xs group hover:bg-pink-50 rounded-lg transition-colors duration-150 p-4"
+                    className="group flex max-w-xs flex-col gap-4 rounded-lg p-4 transition-colors duration-150 hover:bg-pink-50"
                     href="/hr"
                   >
                     <div className="flex items-center gap-3">
-                      <div className="bg-pink-100 p-3 rounded-md">
+                      <div className="rounded-md bg-pink-100 p-3">
                         <CreditCard size={18} className="text-zinc-500" />
                       </div>
-                      <span className="text-lg text-zinc-600 group-hover:text-pink-400 font-title">
+                      <span className="font-title text-lg text-zinc-600 group-hover:text-pink-400">
                         Flash Benefícios
                       </span>
                     </div>
@@ -48,13 +48,13 @@ export function SubMenuProducts(props: SubMenuProductsProps) {
                   </Link>
                   <Link
                     href="/expense"
-                    className="flex flex-col gap-4 max-w-xs group hover:bg-pink-50 rounded-lg transition-colors duration-150 p-4"
+                    className="group flex max-w-xs flex-col gap-4 rounded-lg p-4 transition-colors duration-150 hover:bg-pink-50"
                   >
                     <div className="flex items-center gap-3">
-                      <div className="bg-pink-100 p-3 rounded-md">
+                      <div className="rounded-md bg-pink-100 p-3">
                         <Building2 size={18} className="text-zinc-500" />
                       </div>
-                      <span className="text-lg text-zinc-600 group-hover:text-pink-400 font-title">
+                      <span className="font-title text-lg text-zinc-600 group-hover:text-pink-400">
                         Flash Expense
                       </span>
                     </div>
@@ -67,13 +67,13 @@ export function SubMenuProducts(props: SubMenuProductsProps) {
 
                   <Link
                     href="#"
-                    className="flex flex-col gap-4 max-w-xs group hover:bg-pink-50 rounded-lg transition-colors duration-150 p-4"
+                    className="group flex max-w-xs flex-col gap-4 rounded-lg p-4 transition-colors duration-150 hover:bg-pink-50"
                   >
                     <div className="flex items-center gap-3">
-                      <div className="bg-pink-100 p-3 rounded-md">
+                      <div className="rounded-md bg-pink-100 p-3">
                         <Users size={18} className="text-zinc-500" />
                       </div>
-                      <span className="text-lg text-zinc-600 group-hover:text-pink-400 font-title">
+                      <span className="font-title text-lg text-zinc-600 group-hover:text-pink-400">
                         Flash People
                       </span>
                     </div>
@@ -86,13 +86,13 @@ export function SubMenuProducts(props: SubMenuProductsProps) {
 
                   <Link
                     href="#"
-                    className="flex flex-col gap-4 max-w-xs group hover:bg-pink-50 rounded-lg transition-colors duration-150 p-4"
+                    className="group flex max-w-xs flex-col gap-4 rounded-lg p-4 transition-colors duration-150 hover:bg-pink-50"
                   >
                     <div className="flex items-center gap-3">
-                      <div className="bg-pink-100 p-3 rounded-md">
+                      <div className="rounded-md bg-pink-100 p-3">
                         <Calendar size={18} className="text-zinc-500" />
                       </div>
-                      <span className="text-lg text-zinc-600 group-hover:text-pink-400 font-title">
+                      <span className="font-title text-lg text-zinc-600 group-hover:text-pink-400">
                         Folha Certa
                       </span>
                     </div>
@@ -104,9 +104,9 @@ export function SubMenuProducts(props: SubMenuProductsProps) {
                   </Link>
                 </div>
 
-                <div className="flex-1 pl-10 flex flex-col gap-4">
+                <div className="flex flex-1 flex-col gap-4 pl-10">
                   <h2 className="font-title text-lg font-bold text-zinc-600">
-                      Confira nossos parceiros
+                    Confira nossos parceiros
                   </h2>
                   <p className="text-zinc-500">
                     Acesse agora mesmo e simule as opções que melhor se encaixam
@@ -116,12 +116,12 @@ export function SubMenuProducts(props: SubMenuProductsProps) {
 
                   <Link
                     href="#"
-                    className="font-bold text-sm text-pink-400 flex items-center gap-2 group hover:text-pink-500 transition-colors "
+                    className="group flex items-center gap-2 text-sm font-bold text-pink-400 transition-colors hover:text-pink-500 "
                   >
                     Ler mais
                     <ArrowRight
                       size={16}
-                      className="group-hover:translate-x-1 transition-all duration-150"
+                      className="transition-all duration-150 group-hover:translate-x-1"
                     />
                   </Link>
                 </div>
@@ -131,7 +131,7 @@ export function SubMenuProducts(props: SubMenuProductsProps) {
         </NavigationMenu.Item>
         <NavigationMenu.Indicator />
       </NavigationMenu.List>
-      <NavigationMenu.Viewport className='' />
+      <NavigationMenu.Viewport className="" />
     </NavigationMenu.Root>
   )
 }

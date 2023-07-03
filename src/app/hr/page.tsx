@@ -11,7 +11,7 @@ import { Testimonials } from './components/Testimonials'
 export default function HumanResources() {
   return (
     <div className="mt-14">
-      <div className='bg-hero-pattern bg-cover'>
+      <div className="bg-hero-pattern bg-cover">
         <Hero />
       </div>
       <Stats />

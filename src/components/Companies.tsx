@@ -10,15 +10,15 @@ import Image from 'next/image'
 
 export function Companies() {
   return (
-    <section className="w-full bg-pink-100 drop-shadow-2xl py-20 relative">
-      <h4 className="font-extrabold font-title text-3xl text-center tracking-tight">
+    <section className="relative w-full bg-pink-100 py-20 drop-shadow-2xl">
+      <h4 className="text-center font-title text-3xl font-extrabold tracking-tight">
         Faça como essas empresas e{' '}
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-pink-500">
+        <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
           liberte-se
         </span>{' '}
         da burocracia
       </h4>
-      <div className="mx-auto mt-10 grid grid-cols-4 items-center gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:grid-cols-6 max-w-7xl">
+      <div className="mx-auto mt-10 grid max-w-7xl grid-cols-4 items-center gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:grid-cols-6">
         <Image
           src={companyOne}
           alt=""

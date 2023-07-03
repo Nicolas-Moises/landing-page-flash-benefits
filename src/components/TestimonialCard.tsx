@@ -11,20 +11,20 @@ interface TestimonialCardProps {
 
 export function TestimonialCard(props: TestimonialCardProps) {
   return (
-    <div className="px-8 pt-14 pb-8 rounded-tl-[60px] rounded-br-[60px] bg-white keen-slider__slide flex flex-col justify-between">
+    <div className="keen-slider__slide flex flex-col justify-between rounded-br-[60px] rounded-tl-[60px] bg-white px-8 pb-8 pt-14">
       <div className="flex items-start">
         <Quote size={32} className="fill-pink-400 text-pink-400" />
-        <p className="text-2xl font-medium text-zinc-600 text-center flex items-start mt-4 flex-1">
+        <p className="mt-4 flex flex-1 items-start text-center text-2xl font-medium text-zinc-600">
           {props.message}
         </p>
       </div>
-      <div className="flex flex-col items-center mt-6">
+      <div className="mt-6 flex flex-col items-center">
         <Image
           src={props.avatar}
           alt=""
-          className="w-14 h-14 object-cover rounded-full"
+          className="h-14 w-14 rounded-full object-cover"
         />
-        <div className="flex flex-col items-center text-zinc-600 gap-2">
+        <div className="flex flex-col items-center gap-2 text-zinc-600">
           <h2 className="font-semibold">{props.author}</h2>
           <span className="text-xs text-zinc-400">{props.role}</span>
           <span className="text-sm font-medium text-zinc-500">

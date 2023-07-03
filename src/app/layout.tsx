@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import { ReactNode } from 'react'
 import './globals.css'
 import { Nunito_Sans, Familjen_Grotesk } from 'next/font/google'
@@ -6,11 +7,11 @@ import { Footer } from '@/components/Footer'
 
 import 'keen-slider/keen-slider.min.css'
 
-const nunito = Nunito_Sans({ 
-  subsets: ['latin'], 
-  variable: '--font-nunito', 
+const nunito = Nunito_Sans({
+  subsets: ['latin'],
+  variable: '--font-nunito',
   fallback: ['system-ui', 'inter'],
-  display: 'swap', 
+  display: 'swap',
 })
 const familjenGrotesk = Familjen_Grotesk({
   subsets: ['latin'],
@@ -30,7 +31,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body
-        className={`${nunito.variable} ${familjenGrotesk.variable} bg-zinc-50 text-zinc-600 font-sans overflow-x-hidden`}
+        className={`${nunito.variable} ${familjenGrotesk.variable} overflow-x-hidden bg-zinc-50 font-sans text-zinc-600`}
       >
         <Header />
         {children}

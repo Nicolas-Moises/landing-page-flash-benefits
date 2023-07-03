@@ -37,29 +37,29 @@ const posts = [
 
 export function Blog() {
   return (
-    <section className="w-full py-20 max-w-7xl mx-auto">
+    <section className="mx-auto w-full max-w-7xl py-20">
       <div className="flex items-center justify-between">
         <div className="flex flex-col items-start">
-          <span className="text-sm text-pink-500 mb-2">Blog</span>
-          <h4 className="font-title text-5xl font-bold max-w-2xl text-center">
+          <span className="mb-2 text-sm text-pink-500">Blog</span>
+          <h4 className="max-w-2xl text-center font-title text-5xl font-bold">
             Acompanhe nosso{' '}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-pink-500">
+            <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
               conteúdo
             </span>
           </h4>
         </div>
         <Link
           href="#"
-          className="font-bold text-sm text-pink-400 flex items-center gap-2 group hover:text-pink-500 transition-colors"
+          className="group flex items-center gap-2 text-sm font-bold text-pink-400 transition-colors hover:text-pink-500"
         >
           Acessar blog
           <ArrowRight
             size={16}
-            className="group-hover:translate-x-1 transition-all duration-150"
+            className="transition-all duration-150 group-hover:translate-x-1"
           />
         </Link>
       </div>
-      <div className="grid grid-cols-3 gap-8 mt-20">
+      <div className="mt-20 grid grid-cols-3 gap-8">
         {posts.map((post) => {
           return (
             <BlogCard

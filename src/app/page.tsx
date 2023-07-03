@@ -23,7 +23,7 @@ export default function Home() {
       <Blog />
       <div className="relative">
         <Cta />
-        <div className="absolute right-0 top-1/2 h-[288px] w-[726px] -translate-y-1/2 -translate-x-1/2 rounded-full bg-pink-500 opacity-30 blur-full rotate-45" />
+        <div className="absolute right-0 top-1/2 h-[288px] w-[726px] -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-full bg-pink-500 opacity-30 blur-full" />
       </div>
     </main>
   )

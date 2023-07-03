@@ -8,11 +8,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-pattern" : "url('/src/assets/hero-hr-4.png')",
+        'hero-pattern': "url('/src/assets/hero-hr-4.png')",
       },
       fontFamily: {
         title: 'var(--font-familjen-grotesk), font-mono',
-        sans: 'var(--font-nunito)'
+        sans: 'var(--font-nunito)',
       },
       keyframes: {
         enterFromUp: {
@@ -49,21 +49,20 @@ module.exports = {
           from: { opacity: 1 },
           to: { opacity: 0 },
         },
-       
       },
       animation: {
         enterFromUp: 'enterFromUp 250ms ease',
         slideDown: 'slideDown 300ms ease-out',
         slideUp: 'slideUp 300ms ease-out',
         dropMenu: 'dropMenu 300ms ease-out',
-        
+
         scaleIn: 'scaleIn 300ms ease',
         scaleOut: 'scaleOut 200ms ease',
 
         fadeIn: 'fadeIn 200ms ease',
         fadeOut: 'fadeOut 200ms ease',
       },
-      
+
       colors: {
         pink: {
           100: '#f3e2e6',

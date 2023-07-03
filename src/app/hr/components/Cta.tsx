@@ -2,22 +2,22 @@ import Link from 'next/link'
 
 export function Cta() {
   return (
-    <div className="w-full max-w-3xl mx-auto flex flex-col items-center my-40">
-      <h1 className="font-title font-bold text-zinc-800 text-7xl tracking-tight text-center">
+    <div className="mx-auto my-40 flex w-full max-w-3xl flex-col items-center">
+      <h1 className="text-center font-title text-7xl font-bold tracking-tight text-zinc-800">
         Conheça a liberdade que só a{' '}
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-pink-500">
+        <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
           Flash{' '}
         </span>
         te dá
       </h1>
-      <p className="text-zinc-600 text-lg mt-6 leading-relaxed text-center">
+      <p className="mt-6 text-center text-lg leading-relaxed text-zinc-600">
         Agende agora e tenha simplesmente a melhor experiência de uso
       </p>
 
-      <div className="flex items-center gap-6 mt-6">
+      <div className="mt-6 flex items-center gap-6">
         <button
-          className="font-semibold px-5 py-2 rounded-full bg-pink-400 text-white flex items-center justify-center transition-colors duration-200
-                        border-2 border-pink-400 hover:bg-transparent hover:text-zinc-600"
+          className="flex items-center justify-center rounded-full border-2 border-pink-400 bg-pink-400 px-5 py-2 font-semibold text-white
+                        transition-colors duration-200 hover:bg-transparent hover:text-zinc-600"
         >
           Agendar agora
         </button>
