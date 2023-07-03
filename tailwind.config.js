@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "hero-pattern" : "url('/src/assets/hero-hr-4.png')",
+      },
       fontFamily: {
         title: 'var(--font-familjen-grotesk), font-mono',
         sans: 'var(--font-nunito)'
@@ -60,6 +63,7 @@ module.exports = {
         fadeIn: 'fadeIn 200ms ease',
         fadeOut: 'fadeOut 200ms ease',
       },
+      
       colors: {
         pink: {
           100: '#f3e2e6',

@@ -1,13 +1,14 @@
 'use client'
-
 import Image from 'next/image'
 
-import hero from '../../../assets/hero-hr.png'
+import hero from '../../../assets/hero-hr-2.png'
 
 export function Hero() {
   return (
-    <section className="w-full relative overflow-hidden mt-28">
-      <div className="w-full max-w-7xl mx-auto flex justify-between items-center mt-8">
+    <section className="w-full h-full relative overflow-x-hidden ">
+      {/* <div className="absolute right-0 top-1/2 h-[288px] w-[526px] -translate-x-1/2 rounded-full bg-pink-500 opacity-50 blur-full -z-20" /> */}
+
+      <div className="w-full max-w-7xl mx-auto flex justify-between items-center mt-8 bg-left">
         <div className="max-w-[650px] pb-20">
           <span className="text-sm text-pink-500 mb-2">Flash Benefícios</span>
           <h1 className="font-title font-bold text-zinc-800 text-7xl tracking-tight">
@@ -34,7 +35,7 @@ export function Hero() {
           height={582}
           alt=""
           priority={true}
-          className="max-w-lg w-full mr-2"
+          className="max-w-xl 2xl:max-w-2xl w-full mr-2 -z-10"
         />
       </div>
     </section>
