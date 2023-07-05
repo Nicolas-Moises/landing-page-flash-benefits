@@ -3,10 +3,12 @@
 import Image from 'next/image'
 
 import hero from '../assets/hero.png'
+import { Banner } from './Banner'
 
 export function Hero() {
   return (
-    <section className="relative mt-20 w-full overflow-hidden">
+    <section className="relative mt-24 w-full overflow-hidden">
+      <Banner />
       <div className="absolute left-0 top-1/2 h-[288px] w-[526px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-500 opacity-50 blur-full" />
       <div className="mx-auto mt-8 flex w-full max-w-7xl items-center justify-between">
         <div className="max-w-[650px]">

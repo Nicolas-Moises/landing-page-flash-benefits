@@ -29,7 +29,7 @@ const features = [
   {
     id: 3,
     icon: <Home size={20} />,
-    title: 'Auxílio Home Office',
+    title: 'Home Office',
     content:
       'Apoie o trabalho remoto com esse saldo para pagamentos de contas do home office.',
     link: '#',
