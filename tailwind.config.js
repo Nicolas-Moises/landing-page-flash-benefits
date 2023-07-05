@@ -49,6 +49,16 @@ module.exports = {
           from: { opacity: 1 },
           to: { opacity: 0 },
         },
+
+        // Accordion
+        'accordion-down': {
+          from: { height: 0 },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: 0 },
+        },
       },
       animation: {
         enterFromUp: 'enterFromUp 250ms ease',
@@ -61,6 +71,10 @@ module.exports = {
 
         fadeIn: 'fadeIn 200ms ease',
         fadeOut: 'fadeOut 200ms ease',
+
+        // Accordion
+        'accordion-down': 'accordion-down 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+        'accordion-up': 'accordion-up 300ms cubic-bezier(0.87, 0, 0.13, 1)',
       },
 
       colors: {
