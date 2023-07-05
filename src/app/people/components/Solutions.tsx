@@ -26,13 +26,15 @@ const featureList = [
     icon: <UserPlus className="h-5 w-5 text-zinc-500" />,
     description:
       'Um RH estratégico automatiza seus processos desde a admissão de colaboradores',
-    cta: (
-      <div className="flex items-start gap-2">
-        <Check size={14} className="text-pink-600" />
-        <p className="flex-1 text-sm">
-          Gestão de candidatos simples e com automações
-        </p>
-      </div>
+    feat: (
+      <>
+        <div className="flex items-start gap-2">
+          <Check size={14} className="text-pink-600" />
+          <p className="flex-1 text-sm">
+            Gestão de candidatos simples e com automações
+          </p>
+        </div>
+      </>
     ),
     demo: '/videos/admissao.mp4',
     thumbnail: '/_static/features/analytics.png',
@@ -43,7 +45,7 @@ const featureList = [
     icon: <GraduationCap className="h-5 w-5 text-zinc-500" />,
     description:
       'Quando você desenvolve seus colaboradores, sua empresa atinge níveis extraordinários de performance',
-    cta: (
+    feat: (
       <div className="flex items-start gap-2">
         <Check size={14} className="text-pink-600" />
         <p className="flex-1 text-sm">
@@ -60,7 +62,7 @@ const featureList = [
     icon: <Volume2 className="h-5 w-5 text-zinc-500" />,
     description:
       'Supere suas metas de engajamento e alcance um nível excepcional de conexão com seus colaboradores',
-    cta: (
+    feat: (
       <div className="flex items-start gap-2">
         <Check size={14} className="text-pink-600" />
         <p className="flex-1 text-sm">
@@ -77,7 +79,7 @@ const featureList = [
     icon: <LineChart className="h-5 w-5 text-zinc-500" />,
     description:
       'O RH se destaca quando a estrutura da organização é visível e acessível para todos os colaboradores',
-    cta: (
+    feat: (
       <div className="flex items-start gap-2">
         <Check size={14} className="text-pink-600" />
         <p className="flex-1 text-sm">
@@ -93,12 +95,12 @@ const featureList = [
     icon: <PieChart className="h-5 w-5 text-zinc-500" />,
     description:
       'O RH alcança resultados transformadores quando se tem dados inteligentes dos colaboradores',
-    cta: (
+    feat: (
       <div className="flex items-start gap-2">
         <Check size={14} className="text-pink-600" />
         <p className="flex-1 text-sm">Insights baseados emdados reais</p>
       </div>
-    ), // custom cta
+    ), // custom feat
     demo: '/videos/people-analytic.mp4',
   },
   {
@@ -107,7 +109,7 @@ const featureList = [
     icon: <Wand2 className="h-5 w-5 text-zinc-500" />,
     description:
       'Uma solução de gestão de RH que é a sua cara! Todos os benefícios em uma plataforma prática, intuitiva e segura.',
-    cta: (
+    feat: (
       <div className="flex items-start gap-2">
         <Check size={14} className="text-pink-600" />
         <p className="flex-1 text-sm">
@@ -158,7 +160,7 @@ export function Solutions() {
                 setActiveFeature(featureList.findIndex(({ key }) => key === e))
               }}
             >
-              {featureList.map(({ key, title, icon, description, cta }) => (
+              {featureList.map(({ key, title, icon, description, feat }) => (
                 <AccordionItem key={key} value={key}>
                   <AccordionTrigger>
                     <div className="flex items-center space-x-3 p-3">
@@ -173,7 +175,7 @@ export function Solutions() {
                       <p className="mb-4 text-sm text-zinc-500">
                         {description}
                       </p>
-                      {cta}
+                      {feat}
                     </div>
                   </AccordionContent>
                 </AccordionItem>

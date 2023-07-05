@@ -10,7 +10,6 @@ import {
   Car,
   ScrollText,
 } from 'lucide-react'
-import { File } from './icons/File'
 
 export function Features() {
   return (
@@ -91,16 +90,6 @@ export function Features() {
         </div>
         <div className="flex items-start gap-4">
           <ScrollText size={20} className="h-5 w-5 text-pink-600" />
-          <strong className="flex-1 text-zinc-900">
-            Emitir notas de débito entre empresas e mais.
-            <span className="ml-1 font-normal text-zinc-600">
-              Sit quis amet rutrum tellus ullamcorper ultricies libero dolor
-              eget.
-            </span>
-          </strong>
-        </div>
-        <div className="flex items-start gap-4">
-          <File />
           <strong className="flex-1 text-zinc-900">
             Emitir notas de débito entre empresas e mais.
             <span className="ml-1 font-normal text-zinc-600">

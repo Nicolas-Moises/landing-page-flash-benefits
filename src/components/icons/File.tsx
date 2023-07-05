@@ -1,11 +1,19 @@
-export function File() {
+import { cn } from '@/lib/utils'
+
+interface FileProps {
+  className?: string
+  width?: string
+  height?: string
+}
+
+export function File({ className, width = '24', height = '24' }: FileProps) {
   return (
     <svg
-      width="40"
-      height="40"
+      width={width}
+      height={height}
       viewBox="0 0 40 40"
       fill="none"
-      className=""
+      className={cn('', className)}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

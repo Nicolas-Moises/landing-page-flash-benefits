@@ -1,4 +1,5 @@
-import { GitFork, Share2, ShieldCheck, Shrink, Volume2 } from 'lucide-react'
+import { Announcement } from '@/components/icons/Announcement'
+import { GitFork, Share2, ShieldCheck, Shrink } from 'lucide-react'
 
 const features = [
   {
@@ -19,7 +20,7 @@ const features = [
   },
   {
     id: 3,
-    icon: <Volume2 size={20} />,
+    icon: <Announcement width="20" height="20" />,
     title: 'Engajamento com colaboradores de ponta a ponta',
     content:
       'Supere suas metas de engajamento e alcance um nível excepcional de conexão com seus colaboradores com gestão de comunicação, pesquisa e benefícios no mesmo sistema.',
