@@ -7,6 +7,8 @@ import hero from '../../../assets/hero-expense.png'
 export function Hero() {
   return (
     <section className="relative mt-28 w-full overflow-hidden">
+      <div className="absolute left-0 top-1/2 -z-20 h-[288px] w-[726px] -translate-x-1/2 rounded-full bg-pink-600 opacity-30 blur-full" />
+
       <div className="ml-auto mt-8 flex w-full max-w-[calc(100vw-(100vw-1280px)/2)] items-center gap-16">
         <div className="max-w-[700px] pb-20">
           <span className="mb-2 text-sm text-pink-500">Flash Expense</span>

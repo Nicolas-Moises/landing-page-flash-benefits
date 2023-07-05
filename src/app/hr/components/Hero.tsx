@@ -2,13 +2,15 @@
 import Image from 'next/image'
 
 import hero from '../../../assets/hero-hr-2.png'
+import { Banner } from '@/components/Banner'
 
 export function Hero() {
   return (
-    <section className="relative h-full w-full overflow-x-hidden ">
-      {/* <div className="absolute right-0 top-1/2 h-[288px] w-[526px] -translate-x-1/2 rounded-full bg-pink-500 opacity-50 blur-full -z-20" /> */}
+    <section className="relative mt-20 h-full w-full overflow-x-hidden">
+      <div className="absolute left-0 top-1/2 -z-20 h-[288px] w-[726px] -translate-x-1/2 rounded-full bg-pink-600 opacity-30 blur-full" />
+      <Banner />
 
-      <div className="mx-auto mt-20 flex w-full max-w-7xl items-center justify-between bg-left">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between bg-left">
         <div className="max-w-[650px] pb-20">
           <span className="mb-2 text-sm text-pink-500">Flash Benefícios</span>
           <h1 className="font-title text-7xl font-bold tracking-tight text-zinc-800">

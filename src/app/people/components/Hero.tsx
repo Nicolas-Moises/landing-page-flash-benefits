@@ -36,9 +36,15 @@ export function Hero() {
         </div>
       </div>
       <div className="group relative hover:cursor-pointer">
-        <div className="absolute left-1/2 top-1/2 z-10 flex h-28 w-28 translate-x-[-50%] translate-y-[-50%] items-center justify-center rounded-full border border-zinc-300 bg-pink-300/10">
-          <div className="flex h-20 w-20 items-center justify-center rounded-full border border-pink-600/10 bg-pink-100 group-hover:border-pink-600/30">
-            <Play className="fill-pink-600 text-pink-600 transition-colors duration-150 group-hover:fill-pink-400 group-hover:text-pink-400" />
+        <div
+          className="absolute left-1/2 top-1/2 z-10 flex h-28 w-28 translate-x-[-50%] translate-y-[-50%] items-center justify-center rounded-full
+         border border-zinc-300 bg-pink-300/10"
+        >
+          <div
+            className="flex h-20 w-20 items-center justify-center rounded-full border border-pink-600/10 bg-pink-100 transition-transform duration-200 
+            group-hover:scale-110 group-hover:border-pink-600/30"
+          >
+            <Play className="fill-pink-600 text-pink-600 transition-colors duration-150 group-hover:scale-100" />
           </div>
         </div>
         <Image
@@ -48,7 +54,7 @@ export function Hero() {
           width={2135}
           height={1348}
           alt=""
-          className="mt-20 w-full max-w-5xl rounded-t-xl border border-b-0 border-zinc-400/30"
+          className="mt-20 aspect-video w-full max-w-5xl rounded-t-xl border border-b-0 border-zinc-400/30"
         />
       </div>
     </section>
