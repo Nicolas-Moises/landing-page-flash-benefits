@@ -41,7 +41,7 @@ export function CategorieCard(props: CategorieCardProps) {
 
         <Link
           href={props.link}
-          className="group flex items-center gap-2 text-sm font-bold text-pink-400 transition-colors hover:text-pink-500 "
+          className="group flex items-center gap-2 text-sm font-bold text-pink-400 transition-colors hover:text-pink-500"
         >
           Mais informações
           <ArrowRight

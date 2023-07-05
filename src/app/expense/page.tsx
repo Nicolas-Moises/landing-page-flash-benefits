@@ -1,4 +1,5 @@
 import { Companies } from './components/Companies'
+import { Cta } from './components/Cta'
 import { Excluses } from './components/Excluses'
 import { Faq } from './components/Faq'
 import { Features } from './components/Features'
@@ -18,6 +19,7 @@ export default function Expense() {
       <Pricing />
       <Testimonials />
       <Faq />
+      <Cta />
     </>
   )
 }

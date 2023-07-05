@@ -12,11 +12,11 @@ interface BlogCardProps {
 export function BlogCard(post: BlogCardProps) {
   return (
     <Link href="#" className="group">
-      <div className="h-[360px] w-full">
+      <div className="h-[230px] w-full overflow-hidden rounded-xl ">
         <Image
           src={post.coverUrl}
           alt=""
-          className="h-[360px] w-full rounded-xl object-cover"
+          className="h-[250px] w-full object-cover transition-transform duration-150 group-hover:scale-105"
         />
       </div>
 

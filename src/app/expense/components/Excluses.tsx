@@ -6,7 +6,7 @@ import * as Tabs from '@radix-ui/react-tabs'
 import integrations from '../../../assets/integrations.gif'
 import relatorios from '../../../assets/relatorios.gif'
 import fatura from '../../../assets/summary.gif'
-import approve from '../../../assets/summary.gif'
+import approve from '../../../assets/flow-approve.gif'
 
 const excluses = [
   {

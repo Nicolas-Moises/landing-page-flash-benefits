@@ -18,8 +18,6 @@ const familjenGrotesk = Familjen_Grotesk({
   variable: '--font-familjen-grotesk',
   fallback: ['system-ui', 'mono'],
   weight: '700',
-  preload: true,
-  display: 'swap',
 })
 
 export const metadata = {

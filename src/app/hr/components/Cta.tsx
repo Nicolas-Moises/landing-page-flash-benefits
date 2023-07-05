@@ -16,8 +16,8 @@ export function Cta() {
 
       <div className="mt-6 flex items-center gap-6">
         <button
-          className="flex items-center justify-center rounded-full border-2 border-pink-400 bg-pink-400 px-5 py-2 font-semibold text-white
-                        transition-colors duration-200 hover:bg-transparent hover:text-zinc-600"
+          className="rounded-full border-2 border-transparent bg-gradient-to-bl from-pink-600 to-pink-400 px-8 py-4 font-bold text-white
+          transition-colors duration-200 hover:border-pink-400 hover:bg-none hover:text-zinc-600"
         >
           Agendar agora
         </button>

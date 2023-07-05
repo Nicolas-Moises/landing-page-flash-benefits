@@ -83,7 +83,7 @@ export function Testimonials() {
             <Tabs.Content
               key={testimonial.id}
               value={`${testimonial.id}`}
-              className="mt-10 max-w-2xl text-center"
+              className="mt-10 max-w-2xl text-center data-[state=active]:animate-scaleIn"
             >
               <strong className="text-center text-2xl font-medium text-zinc-800">
                 &quot;{testimonial.message}&quot;

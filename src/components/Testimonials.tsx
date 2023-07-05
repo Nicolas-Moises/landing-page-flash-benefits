@@ -3,6 +3,7 @@ import { useKeenSlider } from 'keen-slider/react'
 import person1 from '../assets/person-1.png'
 import person2 from '../assets/person-2.webp'
 import person3 from '../assets/person-3.webp'
+import person7 from '../assets/person-7.webp'
 import { TestimonialCard } from './TestimonialCard'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 
@@ -27,6 +28,33 @@ const testimonials = [
   },
   {
     id: 3,
+    author: 'Diane Queiroz',
+    role: 'People & Culture Team Lead',
+    company: 'Nagro',
+    message:
+      'O processo de recarga dos cartões é prático, e a flexibilidade no momento de usar o cartão é satisfatória para a equipe.',
+    avatar: person3,
+  },
+  {
+    id: 4,
+    author: 'Débora Coelho',
+    role: 'People & Culture Team Lead',
+    company: 'Elo',
+    message:
+      'Com a Flash os nossos colaboradores tiveram maior flexibilidade do benefício, podendo utilizar da forma que acharem melhor. A Flash tem uma aceitação maior que as empresas de benefícios comuns, facilitando muito para todos. O sistema de benefícios é bem tranquilo e o suporte atende prontamente!',
+    avatar: person7,
+  },
+  {
+    id: 5,
+    author: 'Diane Queiroz',
+    role: 'People & Culture Team Lead',
+    company: 'Nagro',
+    message:
+      'O processo de recarga dos cartões é prático, e a flexibilidade no momento de usar o cartão é satisfatória para a equipe.',
+    avatar: person3,
+  },
+  {
+    id: 6,
     author: 'Diane Queiroz',
     role: 'People & Culture Team Lead',
     company: 'Nagro',

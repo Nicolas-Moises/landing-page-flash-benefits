@@ -6,6 +6,7 @@ import { Cta } from '@/components/Cta'
 import { Expense } from '@/components/Expense'
 import { Hero } from '@/components/Hero'
 import { People } from '@/components/People'
+import { Stats } from '@/components/Stats'
 import { Testimonials } from '@/components/Testimonials'
 
 import 'keen-slider/keen-slider.min.css'
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <main className="">
       <Hero />
+      <Stats />
       <Companies />
       <About />
       <Corp />

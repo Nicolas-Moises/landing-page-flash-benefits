@@ -1,18 +1,18 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-import companyOne from '../assets/VTEXl-logo.png'
-import companyTwo from '../assets/brf-logo.png'
-import companyThree from '../assets/cora-logo.png'
-import companyFour from '../assets/loggi-logo.png'
-import companyFive from '../assets/logo-workana.png'
-import companySix from '../assets/neon-logo.png'
-import companySeven from '../assets/warren-logo.png'
-import companyEight from '../assets/quintoandar-logo.png'
-import companyNine from '../assets/elo7-logo.png'
-import companyTen from '../assets/ford-logo.png'
-import companyEleven from '../assets/livup-logo.webp'
-import companyTwelve from '../assets/suzano-logo.png'
+import companyOne from '../../../assets/VTEXl-logo.png'
+import companyTwo from '../../../assets/brf-logo.png'
+import companyThree from '../../../assets/cora-logo.png'
+import companyFour from '../../../assets/loggi-logo.png'
+import companyFive from '../../../assets/logo-workana.png'
+import companySix from '../../../assets/neon-logo.png'
+import companySeven from '../../../assets/warren-logo.png'
+import companyEight from '../../../assets/quintoandar-logo.png'
+import companyNine from '../../../assets/elo7-logo.png'
+import companyTen from '../../../assets/ford-logo.png'
+import companyEleven from '../../../assets/livup-logo.webp'
+import companyTwelve from '../../../assets/suzano-logo.png'
 
 import { ArrowRight } from 'lucide-react'
 
@@ -83,7 +83,7 @@ export function Companies() {
         />
       </div>
       <span className="mx-auto mt-10 flex flex-shrink items-center gap-2 self-center rounded-full border border-zinc-200 bg-zinc-100 px-4 py-2 text-sm text-zinc-500">
-        Mais de 10000 empresas usam nossas ferramentas para melhorar seus
+        Mais de 2500 empresas usam nossas ferramentas para melhorar seus
         negócios.{' '}
         <Link
           href="#"

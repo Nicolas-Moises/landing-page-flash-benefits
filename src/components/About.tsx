@@ -22,8 +22,8 @@ export function About() {
           </p>
 
           <button
-            className="mt-10 rounded-lg border-2 border-pink-400 bg-pink-400 px-8 py-4 font-bold text-white
-                        transition-colors duration-200 hover:bg-transparent hover:text-zinc-600"
+            className="mt-10 rounded-lg border-2 border-transparent bg-gradient-to-bl from-pink-600 to-pink-400 px-8 py-4 font-bold text-white
+            transition-colors duration-200 hover:border-pink-400 hover:bg-none hover:text-zinc-600"
           >
             Conhecer produto
           </button>

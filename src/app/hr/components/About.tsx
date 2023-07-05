@@ -21,11 +21,11 @@ export function About() {
             Gerencie todos os benefícios em uma plataforma simples, prática e
             intuitiva com total respaldo jurídico, enquanto oferece a melhor
             experiência para seu colaborador. Ah! E o melhor: a taxa é ZERO.
+            Plataforma de gestão de benefícios simples e intuitiva.
           </p>
-
           <button
-            className="mt-10 rounded-lg border-2 border-pink-400 bg-pink-400 px-8 py-4 font-extrabold text-white
-                        transition-colors duration-200 hover:bg-transparent hover:text-zinc-600"
+            className="mt-10 rounded-lg border-2 border-transparent bg-gradient-to-bl from-pink-600 to-pink-400 px-8 py-4 font-bold text-white
+            transition-colors duration-200 hover:border-pink-400 hover:bg-none hover:text-zinc-600"
           >
             Quero ser Flash
           </button>

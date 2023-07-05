@@ -66,7 +66,7 @@ export function SubMenuProducts(props: SubMenuProductsProps) {
                   </Link>
 
                   <Link
-                    href="#"
+                    href="/people"
                     className="group flex max-w-xs flex-col gap-4 rounded-lg p-4 transition-colors duration-150 hover:bg-pink-50"
                   >
                     <div className="flex items-center gap-3">
