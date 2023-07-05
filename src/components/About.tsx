@@ -9,7 +9,7 @@ export function About() {
         <Image src={cards} alt="" />
         <div className="max-w-xl">
           <span className="mb-2 text-sm text-pink-500">Facilidade</span>
-          <h4 className="font-title text-5xl font-bold">
+          <h4 className="font-title text-5xl font-bold tracking-tight">
             Tudo, tudo, tudo em um só{' '}
             <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
               cartão

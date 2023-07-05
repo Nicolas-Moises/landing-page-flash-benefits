@@ -91,7 +91,7 @@ export function Benefits() {
     <section className="mx-auto flex w-full max-w-7xl flex-col py-20">
       <div className="flex flex-col items-center">
         <span className="mb-2 text-sm text-pink-500">Categorias</span>
-        <h4 className="max-w-2xl text-center font-title text-5xl font-bold text-zinc-700">
+        <h4 className="max-w-2xl text-center font-title text-5xl font-bold tracking-tight text-zinc-700">
           Tenha mais{' '}
           <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
             poder de escolha

@@ -8,7 +8,7 @@ export function People() {
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
         <div className="max-w-2xl">
           <span className="mb-2 text-sm text-pink-500">Felicidade</span>
-          <h4 className="font-title text-5xl font-bold">
+          <h4 className="font-title text-5xl font-bold tracking-tight">
             <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
               Flash People
             </span>
