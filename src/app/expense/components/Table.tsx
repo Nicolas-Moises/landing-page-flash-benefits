@@ -10,7 +10,7 @@ export function Table() {
           <th className=""></th>
           <th className="relative w-[280px]">
             <div className="absolute inset-0 flex items-center justify-center rounded-t-xl border-x border-t border-gray-200  bg-gray-100 px-8 py-16">
-              <Image src={logo} alt="" className="w-full rounded-xl" />
+              <Image src={logo} alt="" className="w-full rounded-t-lg" />
             </div>
           </th>
           <th className="">

@@ -34,7 +34,7 @@ const featureList = [
         </p>
       </div>
     ),
-    demo: 'https://d2vwwcvoksz7ty.cloudfront.net/analytics.mp4',
+    demo: '/videos/admissao.mp4',
     thumbnail: '/_static/features/analytics.png',
   },
   {
@@ -52,7 +52,7 @@ const featureList = [
         </p>
       </div>
     ),
-    demo: 'https://d2vwwcvoksz7ty.cloudfront.net/custom-domain.mp4',
+    demo: '/videos/treinamento.mp4',
   },
   {
     key: 'link',
@@ -69,7 +69,7 @@ const featureList = [
         </p>
       </div>
     ),
-    demo: 'https://d2vwwcvoksz7ty.cloudfront.net/link.mp4',
+    demo: '/videos/engajamento.mp4',
   },
   {
     key: 'social',
@@ -85,7 +85,7 @@ const featureList = [
         </p>
       </div>
     ),
-    demo: 'https://d2vwwcvoksz7ty.cloudfront.net/og.mp4',
+    demo: '/videos/organograma.mp4',
   },
   {
     key: 'qr',
@@ -99,7 +99,7 @@ const featureList = [
         <p className="flex-1 text-sm">Insights baseados emdados reais</p>
       </div>
     ), // custom cta
-    demo: 'https://d2vwwcvoksz7ty.cloudfront.net/qr.mp4',
+    demo: '/videos/people-analytic.mp4',
   },
   {
     key: 'team',
@@ -116,7 +116,7 @@ const featureList = [
         </p>
       </div>
     ),
-    demo: 'https://d2vwwcvoksz7ty.cloudfront.net/team.mp4',
+    demo: '/videos/gestao-personalizada.mp4',
   },
 ]
 

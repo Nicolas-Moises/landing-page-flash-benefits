@@ -82,6 +82,7 @@ export function Excluses() {
             >
               <Image
                 src={excluse.item}
+                priority
                 alt=""
                 className="mr-auto w-[75%] rounded-2xl"
               />
