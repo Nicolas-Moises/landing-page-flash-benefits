@@ -3,6 +3,7 @@ import Image from 'next/image'
 import flashLogo from '../assets/flash-logo.png'
 import { Navigation } from './Navigation'
 import Link from 'next/link'
+import { Button } from './ui/button'
 
 export function Header() {
   return (
@@ -19,19 +20,12 @@ export function Header() {
           <Navigation />
         </div>
 
-        <div className="flex items-center gap-10">
-          <a
-            href=""
-            className="text-sm font-semibold text-zinc-600 hover:text-pink-600"
-          >
-            Entrar
-          </a>
-          <button
-            className="flex items-center justify-center rounded-full border-2 border-pink-400 bg-pink-400 px-3 py-2 text-sm font-semibold text-white
-                        transition-colors duration-200 hover:bg-transparent hover:text-zinc-600"
-          >
+        <div className="flex items-center gap-6">
+          <Button variant="tertiary">Entrar</Button>
+
+          <Button radii size="xs">
             Contratar agora
-          </button>
+          </Button>
         </div>
       </div>
     </header>

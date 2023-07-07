@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import logo from '../assets/flash-logo.png'
 import { Instagram, Linkedin, Twitter, Youtube } from 'lucide-react'
+import { Button } from './ui/button'
 
 export function Footer() {
   return (
@@ -54,15 +55,10 @@ export function Footer() {
               <div className="flex w-full items-center gap-3">
                 <input
                   type="email"
-                  className="h-14 flex-1 rounded-lg border-2 border-pink-100 bg-white p-5 text-sm text-zinc-600 ring-pink-500 placeholder:text-zinc-400 focus:outline-none focus:ring-2"
+                  className="flex-1 rounded-lg border-2 border-pink-100 bg-white px-3.5 py-2.5 text-sm text-zinc-600 ring-pink-500 placeholder:text-zinc-400 focus:outline-none focus:ring-2"
                   placeholder="Digite seu e-mail"
                 />
-                <button
-                  type="submit"
-                  className="flex h-14 items-center justify-center rounded-lg border-2 border-pink-400 bg-pink-400 px-5 font-semibold text-white transition-colors hover:bg-transparent hover:text-zinc-500"
-                >
-                  Inscrever
-                </button>
+                <Button type="submit">Inscrever</Button>
               </div>
             </div>
           </div>

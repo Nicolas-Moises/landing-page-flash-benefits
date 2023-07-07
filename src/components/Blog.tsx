@@ -5,6 +5,7 @@ import post2 from '../assets/post-2.png'
 import post3 from '../assets/post-3.png'
 import { BlogCard } from './BlogCard'
 import { ArrowRight } from 'lucide-react'
+import { Heading } from './ui/heading'
 
 const posts = [
   {
@@ -41,12 +42,9 @@ export function Blog() {
       <div className="flex items-center justify-between">
         <div className="flex flex-col items-start">
           <span className="mb-2 text-sm text-pink-500">Blog</span>
-          <h4 className="max-w-2xl text-center font-title text-5xl font-bold tracking-tight">
-            Acompanhe nosso{' '}
-            <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
-              conteúdo
-            </span>
-          </h4>
+          <Heading.Title>
+            Acompanhe nosso <Heading.Gradient>conteúdo</Heading.Gradient>
+          </Heading.Title>
         </div>
         <Link
           href="#"

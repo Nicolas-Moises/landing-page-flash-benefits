@@ -6,6 +6,7 @@ import person3 from '../assets/person-3.webp'
 import person7 from '../assets/person-7.webp'
 import { TestimonialCard } from './TestimonialCard'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
+import { Heading } from './ui/heading'
 
 const testimonials = [
   {
@@ -76,12 +77,10 @@ export function Testimonials() {
     <section className="mx-auto flex w-full max-w-7xl flex-col py-20">
       <div className="flex flex-col items-center">
         <span className="mb-2 text-sm text-pink-500">Quem é Flash, ama</span>
-        <h4 className="max-w-2xl text-center font-title text-5xl font-bold tracking-tight">
-          Palavras de quem vive a{' '}
-          <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
-            liberdade
-          </span>
-        </h4>
+
+        <Heading.Title>
+          Palavras de quem vive a <Heading.Gradient>liberdade</Heading.Gradient>
+        </Heading.Title>
         <p className="mt-6 max-w-2xl text-center leading-relaxed">
           Alguns depoimentos de nossos clientes e usuários sobre nossos
           produtos.

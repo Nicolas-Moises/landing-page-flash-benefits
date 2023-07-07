@@ -3,6 +3,10 @@ import heroPreview from '../../../assets/hero-people.png'
 import Link from 'next/link'
 import { Play } from 'lucide-react'
 
+import GradientRadial from '../../../../public/images/glow-hero.svg'
+
+import Balancer from 'react-wrap-balancer'
+
 export function Hero() {
   return (
     <section className="relative mx-auto mt-28 flex w-full max-w-7xl flex-col items-center py-20">
@@ -10,21 +14,30 @@ export function Hero() {
         className="absolute inset-x-0 top-40 -z-20 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true"
       >
-        <div
+        <Image
+          src={GradientRadial}
+          className="max-w-none"
+          width={1404}
+          height={658}
+          alt="Features Illustration"
+        />
+        {/* <div
           className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           style={{
             clipPath:
               'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
           }}
-        ></div>
+        ></div> */}
       </div>
       <div className="flex flex-col items-center">
         <span className="mb-2 text-sm text-pink-500">Flash People</span>
-        <h4 className="max-w-4xl text-center font-title text-7xl font-bold tracking-tight text-zinc-700">
-          A plataforma ideal para ser protagonista em{' '}
-          <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
-            gestão de pessoas
-          </span>{' '}
+        <h4 className="max-w-5xl text-center font-title text-7xl font-bold tracking-tight text-zinc-700">
+          <Balancer>
+            A plataforma ideal para ser protagonista em{' '}
+            <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
+              gestão de pessoas
+            </span>{' '}
+          </Balancer>
         </h4>
         <p className="mt-6 max-w-2xl text-center leading-relaxed">
           Uma única plataforma com soluções para processos de admissão online,
@@ -34,14 +47,14 @@ export function Hero() {
 
         <div className="mt-6 flex items-center gap-6">
           <button
-            className="rounded-lg border-2 border-transparent bg-gradient-to-bl from-pink-600 to-pink-400 px-8 py-4 font-bold text-white
-          transition-colors duration-200 hover:border-pink-400 hover:bg-none hover:text-zinc-600"
+            className="rounded-lg border-2 border-transparent bg-gradient-to-bl from-pink-600 to-pink-400 px-3.5 py-2.5 text-sm font-bold
+          text-white transition-colors duration-200 hover:border-pink-400 hover:bg-none hover:text-zinc-600"
           >
             Reserve uma demonstração
           </button>
           <Link
             href="#"
-            className="px-8 py-4 font-semibold text-zinc-600 hover:text-pink-400"
+            className="px-3.5 py-2.5 text-sm font-semibold text-zinc-600 hover:text-pink-400"
           >
             Simulação de preço
           </Link>

@@ -3,6 +3,8 @@ import Image from 'next/image'
 import preview from '../../../assets/hero-people.png'
 import Link from 'next/link'
 
+import Balancer from 'react-wrap-balancer'
+
 export function CtaVariant() {
   return (
     <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -27,17 +29,19 @@ export function CtaVariant() {
           </defs>
         </svg>
         <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-          <h2 className="font-title text-3xl tracking-tight text-white sm:text-4xl">
-            A liberdade na gestão dos seus colaboradores está a poucos passos de
-            você!
+          <h2 className="font-title text-3xl tracking-tight text-white sm:text-4xl ">
+            <Balancer>
+              A liberdade na gestão dos seus colaboradores está a poucos passos
+              de você!
+            </Balancer>
           </h2>
-          <p className="mt-6 text-lg font-normal leading-8 text-gray-300">
+          <p className="mt-6 text-lg font-normal leading-8 text-zinc-100">
             Faça o cadastro da sua empresa e conheça nossa plataforma
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
             <Link
               href="#"
-              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-zinc-800 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Agendar apresentação
             </Link>
