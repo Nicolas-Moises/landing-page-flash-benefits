@@ -1,5 +1,5 @@
 import { Check, X } from 'lucide-react'
-import logo from '../../../assets/expense-logo.png'
+import logo from '../../../assets/logo-flash-expense.svg'
 import Image from 'next/image'
 
 export function Table() {
@@ -10,7 +10,7 @@ export function Table() {
           <th className=""></th>
           <th className="relative w-[280px]">
             <div className="absolute inset-0 flex items-center justify-center rounded-t-xl border-x border-t border-gray-200  bg-gray-100 px-8 py-16">
-              <Image src={logo} alt="" className="w-full rounded-t-lg" />
+              <Image src={logo} alt="" className="w-1/2 rounded-t-lg" />
             </div>
           </th>
           <th className="">

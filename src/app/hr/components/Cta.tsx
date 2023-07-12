@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
 export function Cta() {
@@ -15,12 +16,9 @@ export function Cta() {
       </p>
 
       <div className="mt-6 flex items-center gap-6">
-        <button
-          className="rounded-full border-2 border-transparent bg-gradient-to-bl from-pink-600 to-pink-400 px-8 py-4 font-bold text-white
-          transition-colors duration-200 hover:border-pink-400 hover:bg-none hover:text-zinc-600"
-        >
+        <Button radii size="lg">
           Agendar agora
-        </button>
+        </Button>
         <Link
           href="#"
           className="font-semibold text-zinc-600 hover:text-pink-400"

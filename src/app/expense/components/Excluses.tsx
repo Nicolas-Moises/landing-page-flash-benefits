@@ -7,6 +7,9 @@ import integrations from '../../../assets/integrations.gif'
 import relatorios from '../../../assets/relatorios.gif'
 import fatura from '../../../assets/summary.gif'
 import approve from '../../../assets/flow-approve.gif'
+import { useState } from 'react'
+
+import { motion } from 'framer-motion'
 
 const excluses = [
   {
@@ -40,6 +43,8 @@ const excluses = [
 ]
 
 export function Excluses() {
+  const [activeTab, setActiveTab] = useState(excluses[0].id)
+
   return (
     <section className="mx-auto flex w-full max-w-7xl flex-col items-center py-20">
       <div className="flex flex-col items-center">
@@ -59,9 +64,16 @@ export function Excluses() {
               <Tabs.Trigger
                 key={excluse.id}
                 value={`${excluse.id}`}
-                className="group w-full max-w-xl transition-transform duration-150 data-[state=active]:-translate-x-3"
+                onClick={() => setActiveTab(excluse.id)}
+                className="group relative w-full max-w-xl rounded-lg transition-transform duration-150"
               >
-                <div className="flex flex-col items-start gap-2 rounded-lg bg-transparent p-6 group-data-[state=active]:bg-pink-100">
+                {activeTab === excluse.id && (
+                  <motion.div
+                    className="absolute inset-0 rounded-lg bg-pink-100"
+                    layoutId="active-pill"
+                  />
+                )}
+                <div className="relative z-10 flex flex-col items-start gap-2 rounded-lg bg-transparent p-6 transition-colors duration-150 group-hover:bg-pink-300/10">
                   <strong className="font-title text-zinc-800 group-data-[state=active]:text-pink-600">
                     {excluse.title}
                   </strong>

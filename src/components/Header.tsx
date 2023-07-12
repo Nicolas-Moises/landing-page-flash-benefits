@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 
 import flashLogo from '../assets/flash-logo.png'
@@ -5,9 +6,16 @@ import { Navigation } from './Navigation'
 import Link from 'next/link'
 import { Button } from './ui/button'
 
+import { motion } from 'framer-motion'
+
 export function Header() {
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 w-full bg-white/40 backdrop-blur-xl">
+    <motion.header
+      className="fixed left-0 right-0 top-0 z-50 w-full bg-white/40 backdrop-blur-xl"
+      initial={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      whileInView={{ opacity: 1, animation: 'ease' }}
+    >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between py-6">
         <div className="flex items-center gap-20">
           <Link href="/">
@@ -28,6 +36,6 @@ export function Header() {
           </Button>
         </div>
       </div>
-    </header>
+    </motion.header>
   )
 }

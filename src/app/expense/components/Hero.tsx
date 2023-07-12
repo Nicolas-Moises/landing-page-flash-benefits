@@ -3,6 +3,7 @@
 import Image from 'next/image'
 
 import hero from '../../../assets/hero-expense.png'
+import { Button } from '@/components/ui/button'
 
 export function Hero() {
   return (
@@ -18,16 +19,11 @@ export function Hero() {
               Flash Expense
             </span>
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-zinc-600">
+          <p className="my-6 max-w-2xl text-lg leading-relaxed text-zinc-600">
             Diga adeus às papeladas de reembolso com a ferramenta mais completa
             e segura para gerenciamento de gastos corporativos.
           </p>
-          <button
-            className="mt-10 rounded-lg border-2 border-transparent bg-gradient-to-bl from-pink-600 to-pink-400 px-8 py-4 font-bold text-white
-            transition-colors duration-200 hover:border-pink-400 hover:bg-none hover:text-zinc-600"
-          >
-            Agendar uma demonstração
-          </button>
+          <Button>Agendar uma demonstração</Button>
         </div>
         <div className="h-[566px] overflow-hidden">
           <Image

@@ -15,6 +15,7 @@ const nunito = Nunito_Sans({
 })
 const familjenGrotesk = Familjen_Grotesk({
   subsets: ['latin'],
+  display: 'fallback',
   variable: '--font-familjen-grotesk',
   fallback: ['system-ui', 'mono'],
   weight: '700',

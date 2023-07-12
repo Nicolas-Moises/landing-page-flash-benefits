@@ -6,6 +6,7 @@ import { Play } from 'lucide-react'
 import GradientRadial from '../../../../public/images/glow-hero.svg'
 
 import Balancer from 'react-wrap-balancer'
+import { Button } from '@/components/ui/button'
 
 export function Hero() {
   return (
@@ -46,12 +47,7 @@ export function Hero() {
         </p>
 
         <div className="mt-6 flex items-center gap-6">
-          <button
-            className="rounded-lg border-2 border-transparent bg-gradient-to-bl from-pink-600 to-pink-400 px-3.5 py-2.5 text-sm font-bold
-          text-white transition-colors duration-200 hover:border-pink-400 hover:bg-none hover:text-zinc-600"
-          >
-            Reserve uma demonstração
-          </button>
+          <Button>Reserve uma demonstração</Button>
           <Link
             href="#"
             className="px-3.5 py-2.5 text-sm font-semibold text-zinc-600 hover:text-pink-400"

@@ -9,7 +9,7 @@ import { Button } from './ui/button'
 
 export function Hero() {
   return (
-    <section className="relative mt-24 w-full overflow-hidden">
+    <section className="relative mt-20 w-full overflow-hidden">
       <Banner />
       <div className="absolute bottom-0 left-1/2 h-[288px] w-[526px] -translate-x-1/2 translate-y-1/2 rounded-full bg-violet-400 opacity-60 blur-full" />
       <div className="mx-auto mt-8 flex w-full max-w-7xl items-center justify-between">

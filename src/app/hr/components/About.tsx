@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import about from '../../../assets/about-hr.png'
+import { Button } from '@/components/ui/button'
 
 export function About() {
   return (
@@ -17,18 +18,13 @@ export function About() {
               decomplicada
             </span>
           </h4>
-          <p className="mt-6 leading-relaxed">
+          <p className="my-6 leading-relaxed">
             Gerencie todos os benefícios em uma plataforma simples, prática e
             intuitiva com total respaldo jurídico, enquanto oferece a melhor
             experiência para seu colaborador. Ah! E o melhor: a taxa é ZERO.
             Plataforma de gestão de benefícios simples e intuitiva.
           </p>
-          <button
-            className="mt-10 rounded-lg border-2 border-transparent bg-gradient-to-bl from-pink-600 to-pink-400 px-8 py-4 font-bold text-white
-            transition-colors duration-200 hover:border-pink-400 hover:bg-none hover:text-zinc-600"
-          >
-            Quero ser Flash
-          </button>
+          <Button>Quero ser Flash</Button>
         </div>
       </div>
     </section>
