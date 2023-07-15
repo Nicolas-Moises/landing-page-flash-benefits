@@ -9,7 +9,10 @@ import { People } from '@/components/People'
 import { Stats } from '@/components/Stats'
 import { Testimonials } from '@/components/Testimonials'
 
+import preview from '../assets/hero-people.png'
+
 import 'keen-slider/keen-slider.min.css'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -24,8 +27,21 @@ export default function Home() {
       <Testimonials />
       <Blog />
       <div className="relative">
-        <Cta />
-        <div className="absolute right-0 top-1/2 h-[288px] w-[726px] -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-full bg-pink-500 opacity-30 blur-full" />
+        <Cta
+          title="Colaboradores e RHs rosa de satistação"
+          link="#"
+          description="Os números confirmam: 98% dos profissionais de RHs se sentem satisfeitos com a Flash e 62% percebem melhora na retenção de talentos. E tem mais: nossa nota de recomendação de NPS é +86."
+          imageBg={
+            <Image
+              className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 object-contain ring-1 ring-white/10"
+              src={preview}
+              alt="App screenshot"
+              width="1824"
+              height="1080"
+            />
+          }
+          ctaLink="Contratar agora"
+        />
       </div>
     </main>
   )

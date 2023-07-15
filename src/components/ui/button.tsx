@@ -5,7 +5,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode
   variant?: 'primary' | 'secondary' | 'tertiary'
   size?: 'lg' | 'md' | 'sm' | 'xs'
-  className?: 'string'
+  className?: string
   radii?: boolean
   icon?: ReactElement
 }

@@ -11,7 +11,7 @@ export function Banner() {
   }
   return (
     <div
-      className={`relative isolate m-2 mx-auto  max-w-7xl items-center gap-x-6 overflow-hidden rounded bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1 ${
+      className={`relative isolate m-2 mx-auto max-w-7xl items-center gap-x-6 overflow-hidden rounded bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1 ${
         hide ? 'hidden' : 'flex'
       }`}
     >

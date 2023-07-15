@@ -16,7 +16,7 @@ export function Header() {
       transition={{ duration: 0.5 }}
       whileInView={{ opacity: 1, animation: 'ease' }}
     >
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between py-6">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-6 xl:px-0">
         <div className="flex items-center gap-20">
           <Link href="/">
             <Image
@@ -28,7 +28,7 @@ export function Header() {
           <Navigation />
         </div>
 
-        <div className="flex items-center gap-6">
+        <div className="hidden items-center gap-6 lg:flex">
           <Button variant="tertiary">Entrar</Button>
 
           <Button radii size="xs">

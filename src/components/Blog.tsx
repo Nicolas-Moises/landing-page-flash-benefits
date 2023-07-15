@@ -38,7 +38,7 @@ const posts = [
 
 export function Blog() {
   return (
-    <section className="mx-auto w-full max-w-7xl py-20">
+    <section className="mx-auto w-full max-w-7xl px-6 py-20 xl:px-0">
       <div className="flex items-center justify-between">
         <div className="flex flex-col items-start">
           <span className="mb-2 text-sm text-pink-500">Blog</span>
@@ -57,7 +57,7 @@ export function Blog() {
           />
         </Link>
       </div>
-      <div className="mt-20 grid grid-cols-3 gap-8">
+      <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => {
           return (
             <BlogCard

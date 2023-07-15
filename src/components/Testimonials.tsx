@@ -74,7 +74,7 @@ export function Testimonials() {
     },
   })
   return (
-    <section className="mx-auto flex w-full max-w-7xl flex-col py-20">
+    <section className="mx-auto flex w-full max-w-7xl flex-col px-6 py-20 xl:px-0">
       <div className="flex flex-col items-center">
         <span className="mb-2 text-sm text-pink-500">Quem é Flash, ama</span>
 

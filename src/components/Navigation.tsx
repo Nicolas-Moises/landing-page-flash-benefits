@@ -3,7 +3,7 @@ import { SubMenuProducts } from './SubMenuProducts'
 
 export function Navigation() {
   return (
-    <nav>
+    <nav className="hidden lg:block">
       <ul className="flex items-center gap-10">
         <li className="text-sm font-semibold text-zinc-500">
           <SubMenuProducts>

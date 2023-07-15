@@ -14,10 +14,10 @@ export function Title({ children, size = 'md', className }: TitleProps) {
     <h4
       className={cn(
         'font-title font-bold tracking-tight text-zinc-800',
-        size === 'lg' && 'text-7xl',
-        size === 'md' && 'text-5xl',
-        size === 'sm' && 'text-2xl',
-        size === 'xs' && 'text-xl',
+        size === 'lg' && 'text-6xl md:text-7xl',
+        size === 'md' && 'text-4xl md:text-5xl',
+        size === 'sm' && 'text-xl md:text-2xl',
+        size === 'xs' && 'text-lg md:text-xl',
         className,
       )}
     >

@@ -18,71 +18,72 @@ import { ArrowRight } from 'lucide-react'
 
 export function Companies() {
   return (
-    <section className="relative flex w-full flex-col py-20">
-      <div className="mx-auto mt-10 grid max-w-7xl grid-cols-4 items-center gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:grid-cols-6">
+    <section className="relative flex w-full flex-col px-6 py-20 xl:px-0">
+      <div className=" mx-auto mt-10 grid max-w-7xl grid-cols-3 items-center gap-x-8 gap-y-10  sm:grid-cols-4 sm:gap-x-10 lg:grid-cols-6">
         <Image
           src={companyOne}
           alt=""
-          className="col-span-2 max-h-10 w-full object-contain lg:col-span-1"
+          className=" max-h-10 w-full object-contain lg:col-span-1"
         />
         <Image
           src={companyTwo}
           alt=""
-          className="col-span-2 max-h-10 w-full object-contain lg:col-span-1"
+          className=" max-h-10 w-full object-contain lg:col-span-1"
         />
         <Image
           src={companyThree}
           alt=""
-          className="col-span-2 max-h-7 w-full object-contain lg:col-span-1"
+          className=" max-h-7 w-full object-contain lg:col-span-1"
         />
         <Image
           src={companyFour}
           alt=""
-          className="col-span-2 max-h-8 w-full object-contain lg:col-span-1"
+          className=" max-h-8 w-full object-contain lg:col-span-1"
         />
         <Image
           src={companyFive}
           alt=""
-          className="col-span-2 max-h-24 w-full object-contain sm:col-start-2 lg:col-span-1"
+          className=" hidden max-h-24 w-full object-contain sm:col-start-2 lg:col-span-1 lg:inline-flex"
         />
         <Image
           src={companySix}
           alt=""
-          className="col-span-2 col-start-2 max-h-7 w-full object-contain sm:col-start-auto lg:col-span-1"
+          className=" col-start-2 max-h-7 w-full object-contain sm:col-start-auto lg:col-span-1"
         />
 
         <Image
           src={companySeven}
           alt=""
-          className="col-span-2 max-h-10 w-full object-contain lg:col-span-1"
+          className=" max-h-10 w-full object-contain lg:col-span-1"
         />
         <Image
           src={companyEight}
           alt=""
-          className="col-span-2 max-h-10 w-full object-contain lg:col-span-1"
+          className=" max-h-6 w-full object-contain lg:col-span-1 lg:max-h-10"
         />
         <Image
           src={companyNine}
           alt=""
-          className="col-span-2 max-h-7 w-full object-contain lg:col-span-1"
+          className=" hidden max-h-7 w-full object-contain lg:col-span-1
+          lg:inline-flex"
         />
         <Image
           src={companyTen}
           alt=""
-          className="col-span-2 max-h-10 w-full object-contain lg:col-span-1"
+          className="max-h-10 w-full object-contain lg:col-span-1"
         />
         <Image
           src={companyEleven}
           alt=""
-          className="col-span-2 max-h-24 w-full object-contain sm:col-start-2 lg:col-span-1"
+          className=" hidden max-h-24 w-full object-contain sm:col-start-2 lg:col-span-1 lg:inline-flex"
         />
         <Image
           src={companyTwelve}
           alt=""
-          className="col-span-2 col-start-2 max-h-7 w-full object-contain sm:col-start-auto lg:col-span-1"
+          className=" col-start-2 hidden max-h-7 w-full object-contain sm:col-start-auto lg:col-span-1 lg:inline-flex"
         />
       </div>
-      <span className="mx-auto mt-10 flex flex-shrink items-center gap-2 self-center rounded-full border border-zinc-200 bg-zinc-100 px-4 py-2 text-sm text-zinc-500">
+      <span className="mx-auto mt-10 flex flex-shrink items-center gap-2 self-center rounded-full border border-zinc-200 bg-zinc-100 px-4 py-2 text-xs text-zinc-500 lg:text-sm">
         Mais de 10000 empresas usam nossas ferramentas para melhorar seus
         negócios.{' '}
         <Link
@@ -90,7 +91,7 @@ export function Companies() {
           className="flex items-center gap-1 font-semibold text-pink-600 hover:text-pink-400"
         >
           Leia as histórias de nossos clientes
-          <ArrowRight size={14} />
+          <ArrowRight className="h-3 w-3 lg:h-4 lg:w-4" />
         </Link>
       </span>
     </section>
